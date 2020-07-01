@@ -10,7 +10,7 @@ from orthodoxes_europa.views import arbeit, download, geoportal, about, kontakt,
 
 
 @app.before_request
-def before_request() -> None:
+def before_request():
     if request.path.startswith('/static'):
         return  # Only needed if not running with apache and static alias
 
