@@ -1,5 +1,8 @@
 import os
 import sys
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
-from orthodoxes_europa import app as application
+import orthodoxes_europa
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+application = orthodoxes_europa.app
+

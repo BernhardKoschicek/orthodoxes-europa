@@ -1,4 +1,4 @@
-from flask import Flask, Response, render_template, request
+from flask import Flask, Response, request
 
 app = Flask(__name__, instance_relative_config=True)
 app.config.from_object('config.default')  # type: ignore
