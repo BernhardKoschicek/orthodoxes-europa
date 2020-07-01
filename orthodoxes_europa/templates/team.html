@@ -1,0 +1,66 @@
+{% extends "layout.html" %}
+{% block title %}Team{% endblock %}
+{% block content %}
+    <section id="team">
+        <div class="container">
+            <div class="section-header">
+                <h3>Team</h3>
+            </div>
+            <div class="row">
+                {% for name, person in team.items() %}
+                    <div class="col-lg-3 col-md-6 wow fadeInUp"
+                         style="visibility: visible; animation-name: fadeInUp;" data-toggle="modal"
+                         data-target="#myModal{{ person.id }}">
+
+
+                        <div class="modal fade" id="myModal{{ person.id }}" tabindex="-1"
+                             role="dialog" aria-labelledby="myModalLabel"
+                             aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-dialog-centered ">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">{{ name }}</h5>
+
+                                        <button type="button" class="close"
+                                                data-dismiss="modal"
+                                                aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <h6 class="modal-title">{{ person.function }}</h6>
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-md-8"><p>{{ person.text }}</p></div>
+                                                <div class="col-md-4 ml-auto"><img
+                                                        src="/static/images/team/{{ person.img }}"
+                                                        class="img-fluid" alt=""></div>
+                                            </div>
+                                        </div>
+                                        <p>
+                                            <a href="mailto:{{ person.email }}">{{ person.email }}</a>
+                                        </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                                data-dismiss="modal">Close
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="member">
+                            <img src="/static/images/team/{{ person.img }}" class="img-fluid"
+                                 alt="">
+                            <div class="member-info">
+                                <div class="member-info-content">
+                                    <h4>{{ name }}</h4> <span>{{ person.function }}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+{% endblock %}

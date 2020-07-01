@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+{% block title %}{% endblock %}
+{% block content %}
+    <h3>{{ projekt.title }}</h3>
+    <h4>{{ projekt.subtitle }}</h4>
+    <hr>
+    <p><b>Projektleitung:</b> {{ projekt.pi }}</p>
+    <b>ProjektmitarbeiterInnen:</b> <br>
+    <ul>
+        {% for member in projekt.members %}
+        <li>{{ member }}</li>
+    {% endfor %}
+    </ul>
+    <p><b>Laufzeit:</b> {{ projekt.duration }}</p>
+    <p><b>Trägerin des Projekts:</b><br>
+    {{ projekt.institute |display_sponsors|safe }}
+    </p>
+    <p><b>Gefördert von:</b><br>
+    {{ projekt.sponsor |display_sponsors|safe }}
+    </p>
+    <p><b>In Zusammenarbeit mit:</b><br>
+    {{ projekt.partners |display_sponsors|safe }}
+    </p>
+    <p><b>Beschreibung:</b></p>
+    {{ projekt.description|safe }}
+
+
+
+
+{% endblock %}
