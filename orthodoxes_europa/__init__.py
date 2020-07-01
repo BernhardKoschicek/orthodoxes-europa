@@ -4,7 +4,7 @@ app = Flask(__name__, instance_relative_config=True)
 # app.config.from_object('config.default')  # type: ignore
 # app.config.from_pyfile('production.py')  # type: ignore
 
-from orthodoxes_europa.util import util, filters
+from orthodoxes_europa.util import filters
 from orthodoxes_europa.views import arbeit, download, geoportal, about, kontakt, projekte, team, \
     verein, index
 
