@@ -1,0 +1,19 @@
+# sensitive data (except example files)
+instance/*
+!instance/example_*
+
+# cache, system logs
+__pycache__/*
+.mypy_cache/*
+.bash_history
+.cache/*
+
+# compiled files
+*.pyc
+
+# ide
+.idea
+.ftpconfig
+
+#venv
+.venv
