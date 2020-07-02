@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/orthodoxes-europa.iml" filepath="$PROJECT_DIR$/.idea/orthodoxes-europa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../orthodoxes_europa/.idea/orthodoxes_europa.iml" filepath="$PROJECT_DIR$/../orthodoxes_europa/.idea/orthodoxes_europa.iml" />
     </modules>
   </component>
 </project>
