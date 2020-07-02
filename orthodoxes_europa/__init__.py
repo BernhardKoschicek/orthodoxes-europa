@@ -1,10 +1,11 @@
-from flask import Flask,  request
+from flask import Flask, request
+1/0
 
 app = Flask(__name__, instance_relative_config=True)
 # app.config.from_object('config.default')  # type: ignore
 # app.config.from_pyfile('production.py')  # type: ignore
 
-from orthodoxes_europa.util import filters
+from orthodoxes_europa.util import filters, util
 from orthodoxes_europa.views import arbeit, download, geoportal, about, kontakt, projekte, team, \
     verein, index
 
@@ -25,7 +26,6 @@ def apply_caching(response):
 
 
 app.register_blueprint(filters.blueprint)
-
 
 if __name__ == "__main__":  # pragma: no cover
     app.run()
