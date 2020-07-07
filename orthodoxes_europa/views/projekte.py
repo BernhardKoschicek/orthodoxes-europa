@@ -52,10 +52,12 @@ projects_ = OrderedDict([
 ])
 
 
-@app.route('/projekte')
-def projekte():
-    return render_template('projekte.html', projects=projects_)
+@app.route('/projekte', methods=['GET'])
+@app.route('/projekte/<projekt>', methods=['GET'])
+def projekte(projekt):
+    if projekt:
+        return render_template('projekt_details.html', projekt=projects_[projekt])
+    else:
+        return render_template('projekte.html', projects=projects_)
 
-@app.route('/projekte/<projekt>')
-def projekt_detail(projekt):
-    return render_template('projekt_details.html', projekt=projects_[projekt])
+

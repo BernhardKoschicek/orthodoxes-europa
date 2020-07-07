@@ -4,6 +4,8 @@ import flask
 import jinja2
 from flask import url_for
 
+from orthodoxes_europa.views import projekte
+
 blueprint: flask.Blueprint = flask.Blueprint('filters', __name__)
 
 INSTITUTES = {
@@ -117,13 +119,25 @@ def display_menu(self: Any, route: str) -> str:
     """ Returns HTML with the menu and mark appropriate item as selected."""
     html = ''
     items = ['about', 'projekte', 'oeffentlichkeitsarbeit', 'team', 'geoportal', 'download',
-             'verein', 'kontakt']
+             'verein', 'impressum']
     for item in items:
         active = ''
         if route.startswith('/' + item):
             active = 'active'
-        html += '<a class="nav-item nav-link {active}" href="{url}">{label}</a>'.format(
-            active=active, url=url_for(item), label=item.upper())
+        if item == 'projekte':
+            html += """<div class="nav-item dropdown">
+                    <a class=" nav-link dropdown-toggle {active}" href="{url}" 
+                    id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{label}</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">""".format(
+                    active=active, url=url_for(item), label=item.title())
+            for projekt in projekte.projects_:
+                html += '<a class ="dropdown-item" href="{url}"> {label}</a>'.format(
+                    url=url_for(item, projekt=projekt, _method='GET'), label=projekt.title())
+
+            html += '  </div></div>'
+        else:
+            html += '<a class="nav-item nav-link {active}" href="{url}">{label}</a>'.format(
+            active=active, url=url_for(item), label=item.title())
     return html
 
 

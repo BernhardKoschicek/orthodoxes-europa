@@ -1,5 +1,13 @@
 body {
-    background-color: beige;
+
+    background-image: url(../images/background.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    background-position: 300px 100px;
 }
 
 .image-container {
@@ -102,7 +110,8 @@ body {
 }
 
 img {
-  display: block;
-  max-width: 100%;
-  height: auto;
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
+
