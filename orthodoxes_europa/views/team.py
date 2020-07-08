@@ -8,10 +8,10 @@ from orthodoxes_europa import app
 @app.route('/team')
 def team() -> str:
     team_ = OrderedDict([
-        ('Sandra Wabnitz', {
+        ('Peter Frauendorfer', {
             'id': '1',
             'email': 'Sandra.Wabnitz@oeaw.ac.at',
-            'function': 'Research',
+            'function': 'Forschung',
             'text': """Bachelorstudium Geschichte an der Universität Wien. Anschließend Studium des
              Masters Geschichtsforschung, historische Hilfswissenschaften und Archivwissenschaften
               am Institut für Österreichische Geschichtsforschung der Universität Wien;
@@ -22,7 +22,7 @@ def team() -> str:
         ('Itana Ćupić', {
             'id': '2',
             'email': 'cupicitana@gmail.com',
-            'function': 'Research',
+            'function': 'Forschung',
             'text': """BSc. in Economics, Department of Tourism (2013, Singidunum Universität,
              Belgrad, Serbien). Masterstudium CREOLE – Cultural Differences and Transnational
               Processes am Institut für Sozial- und Kulturanthropologie der Universität Wien
@@ -59,5 +59,31 @@ Initiatorin und Ko-Autorin von „Montenegrins in Austria“, in dessen Rahmen d
             'text': "",
             'img': 'bernhard.png',
         }),
+        ('Sandra Wabnitz', {
+            'id': '5',
+            'email': 'Sandra.Wabnitz@oeaw.ac.at',
+            'function': 'Forschung',
+            'text': """Bachelorstudium Geschichte an der Universität Wien. Anschließend Studium des
+         Masters Geschichtsforschung, historische Hilfswissenschaften und Archivwissenschaften
+          am Institut für Österreichische Geschichtsforschung der Universität Wien;
+           Masterarbeit über die Integration der Barbaren in die lateinische und chinesische
+            Historiographie des Frühmittelalters.""",
+            'img': 'sandra.jpg',
+        }),
+        ('Mihailo Popović ', {
+            'id': '6',
+            'email': 'mihailop@hotmail.com',
+            'function': 'Projektleiter',
+            'text': """Priv.-Doz. Mag. Dr. phil.; Mag. phil. mit Auszeichnung (Universität Wien, 
+            2000); Dr. phil. mit Auszeichnung (Universität Wien, 2005); Privatdozent der Universität
+             Wien mit der venia docendi "Geschichte Südosteuropas und Byzantinistik" (auf 
+             einstimmigen Beschluß der Universität Wien, 2011). Forschungsschwerpunkte: Geschichte
+              und Kultur Südosteuropas (7.-16. Jahrhundert), spätbyzantinische Geschichte (1204-1453),
+               Gender Studies, historische Geographie und Kartographie des Mittelmeerraums,
+                Digital Humanities und Historical Geographic Information Systems (HGIS), 
+                Orthodoxie und Österreich""",
+            'img': 'mihailo.jpg',
+        }),
+
     ])
     return render_template('team.html', team=team_)

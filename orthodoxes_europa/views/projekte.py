@@ -5,7 +5,7 @@ from flask import render_template
 from orthodoxes_europa import app
 
 projects_ = OrderedDict([
-    ('Flucht', {
+    ('Flucht-Gefangenschaft-Neubeginn-und-Widerstand', {
         'id': '1',
         'image': 'lager_oberhollabrunn.jpg',
         'title': 'Flucht, Gefangenschaft, Neubeginn und Widerstand',
@@ -17,7 +17,7 @@ projects_ = OrderedDict([
         'members': ['Sandra Wabnitz', 'Itana Ćupić'],
         'institute': ['MT'],
         'sponsor': ['ZF'],
-        'partners': ['MT', 'AIT'],
+        'partners': ['AIT'],
         'description': """<p>In diesem Projekt richten wir unseren Fokus auf das schwere Los der Zivilbevölkerung im Ersten Weltkrieg (1914-1918) und hier im besonderen auf die östliche Front Österreich-Ungarns in diesem weltumspannenden Konflikt. Mit dem Ausbruch des Ersten Weltkriegs am 28. Juli 1914 gelang es der Armee des Zarenreiches Rußland zunächst, in der Bukowina und in Ostgalizien tief auf das Staatsgebiet Österreich-Ungarns einzudringen. Dies hatte zur Folge, dass die dortige (zu einem beträchtlichen Teil orthodoxe) Bevölkerung floh / fliehen musste und in der Folge in andere Teile der Monarchie evakuiert werden musste. Die Statthalterei von Niederösterreich (damals das Erzherzogtum Österreich unter der Enns) erließ ein Rundschreiben an alle Bezirkshauptmannschaften und fragte an, ob die Möglichkeit zur Aufnahme dieser Kriegsflüchtlinge bestünde. Oberhollabrunn (jetzt Teil der Stadt Hollabrunn, Niederösterreich) war wegen des Bedarfs an Hilfskräften in der Landwirtschaft dazu bereit. Im Februar 1915 befand sich rund eine halbe Million Kriegsflüchtlinge aus Galizien in verschiedenen Teilen der Monarchie, davon rund 25.000 in Niederösterreich. Die große Anzahl von Flüchtlingen auf dem Gebiet von Oberhollabrunn führte schließlich zur Überlegung, ebendort ein eigenes Flüchtlingslager zu errichten. Einer der führenden Initiatoren dieser Idee war der damalige Bürgermeister von Oberhollabrunn, Dr. Rudolf Kolisko (1859-1942, Bürgermeister 1908-1919), der Gemeindegrundstücke südlich bzw. südöstlich des Ortes zur Verfügung stellen wollte, damit diese infrastrukturell zu einem Flüchtlingslager ausgebaut würden, das nach dem Krieg als Stadterweiterungsgebiet (Stichwort: Gartenstadt) einverleibt werden sollte. Das Lager war für 5.000 Flüchtlinge konzipiert. Bürgermeister Kolisko unterstützte die zentralen Behörden der Monarchie tatkräftig im Wege seiner Stadtgemeinde, indem er eine Wasserleitung, einen Hauptsammelkanal und eine Schmalspurbahn vom Stationsgebäude der Nordwestbahn bis zum Lager errichten ließ sowie die Elektrifizierung des Areals gewährleistete. An Unterkünften wurden einerseits Familienhäuser in fester Bauweise und andererseits Baracken aus Holz erbaut. Es entstand eine komplette, autarke Infrastruktur mit Gebäuden für die Lagerverwaltung, mit einer Schule, einer Wäscherei, Werkstätten, Wachhäusern, Ställen für Rinder und Schweine, Wirtschaftsgebäuden, einer Quarantänebaracke, einer Spitalsbaracke, einem Feuerwehrzeughaus, einer Kirche und mit einem Gasthaus. Insgesamt wurden rund 109 Objekte errichtet. Im Sommer 1916 war das Flüchtlingslager in Betrieb und beherbergte im September 1916 bereits 2.000 Flüchtlinge aus Ostgalizien und der Bukowina. Eine große Gefahr für die Flüchtlinge ging von Krankheiten, hier vor allem vom Flecktyphus, aus. Die Mortalität im Lager dürfte (wie generell in der Bevölkerung der Monarchie im Verlaufe des Krieges) sehr hoch gewesen sein, was die Evidenz der Totenscheine der verstorbenen Orthodoxen erahnen lässt, die wir in unserem Projekt im Detail erforschen (s. u.). </p>
 <p>Aufgelassen wurde das Flüchtlingslager Oberhollabrunn, das zur Zeit der stärksten Belegung über 4.000 Flüchtlinge beherbergte, schließlich Ende April 1918 und wurde mit der Ausrufung der Ersten Republik am 12. November 1918 einer neuen Verwendung zugeführt. Ab Dezember 1918 wurden Kinder zwischen 14 und 16 Jahren seitens der Stadt Wien zwecks Erholung in den verlassenen Gebäuden untergebracht, womit ein neues Kapitel der Geschichte begann. </p>
 
@@ -30,7 +30,7 @@ projects_ = OrderedDict([
 
  """
     }),
-    ('Geoportal', {
+    ('Digitales-Geoportal-der-Geschichte-der-SerbInnen-in-Wien', {
         'id': '2',
         'image': "ratzenstadtl.jpg",
         'title': 'Ein digitales Geoportal der Geschichte der SerbInnen in Wien (1741-1918)',
@@ -54,7 +54,7 @@ projects_ = OrderedDict([
 
 @app.route('/projekte', methods=['GET'])
 @app.route('/projekte/<projekt>', methods=['GET'])
-def projekte(projekt):
+def projekte(projekt=None):
     if projekt:
         return render_template('projekt_details.html', projekt=projects_[projekt])
     else:

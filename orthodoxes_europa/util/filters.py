@@ -66,7 +66,7 @@ INSTITUTES = {
     'MA7': {
         'name': 'Wien Kultur (MA 7)',
         'url': 'https://www.wien.gv.at/kultur/abteilung/',
-        'logo': 'wien_kultur.jpg',
+        'logo': 'wien-kultur.png',
         'member': '',
         'address': ''},
     'AIT': {
@@ -118,7 +118,7 @@ MEMBERS = {
 def display_menu(self: Any, route: str) -> str:
     """ Returns HTML with the menu and mark appropriate item as selected."""
     html = ''
-    items = ['about', 'projekte', 'oeffentlichkeitsarbeit', 'team', 'geoportal', 'download',
+    items = ['projekte', 'öffentlichkeitsarbeit', 'team', 'geoportal', 'download',
              'verein', 'impressum']
     for item in items:
         active = ''
@@ -128,11 +128,13 @@ def display_menu(self: Any, route: str) -> str:
             html += """<div class="nav-item dropdown">
                     <a class=" nav-link dropdown-toggle {active}" href="{url}" 
                     id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{label}</a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">""".format(
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class ="dropdown-item" href="{url}">Übersicht</a>
+                    <div class="dropdown-divider"></div>""".format(
                     active=active, url=url_for(item), label=item.title())
             for projekt in projekte.projects_:
-                html += '<a class ="dropdown-item" href="{url}"> {label}</a>'.format(
-                    url=url_for(item, projekt=projekt, _method='GET'), label=projekt.title())
+                html += '<a class ="dropdown-item" href="{url}">{label}</a>'.format(
+                    url=url_for(item, projekt=projekt, _method='GET'), label=projekt.replace('-', ' '))
 
             html += '  </div></div>'
         else:
@@ -144,14 +146,14 @@ def display_menu(self: Any, route: str) -> str:
 @jinja2.contextfilter
 @blueprint.app_template_filter()
 def display_institutes(self: Any, institutes: Iterator) -> str:
-    html = '<div>'
+    html = ''
     for short_name in institutes:
         institute = INSTITUTES[short_name]
         html += '''
             <a href="{url}" target="_blank">
-                <img src="/static/images/institutes/{logo}" alt="{name}" title="{name}">
+                <img src="/static/images/institutes/{logo}" alt="{name}" title="{name}"  style="display: unset;">
             </a>'''.format(url=institute['url'], logo=institute['logo'], name=institute['name'])
-    return html + '</div>'
+    return html
 
 
 @jinja2.contextfilter
@@ -168,7 +170,7 @@ def display_sponsors(self: Any, institutes: Iterator) -> str:
                         <p>{address}</p>
                         <p><a href="{url}" target="_blank">{url}</a></p>
                     </div>
-                    <div class="col-sx-4">
+                    <div class="col-sm-4">
                         <a href="{url}" target="_blank">
                             <img src="/static/images/institutes/{logo}" alt="{name}" title="{name}" style="max-height: 200px">
                         </a>

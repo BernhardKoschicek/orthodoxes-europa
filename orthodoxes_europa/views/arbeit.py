@@ -3,6 +3,6 @@ from flask import render_template
 from orthodoxes_europa import app
 
 
-@app.route('/oeffentlichkeitsarbeit')
-def oeffentlichkeitsarbeit():
+@app.route('/öffentlichkeitsarbeit')
+def öffentlichkeitsarbeit():
     return render_template('arbeit.html')
