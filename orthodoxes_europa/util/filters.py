@@ -10,13 +10,13 @@ blueprint: flask.Blueprint = flask.Blueprint('filters', __name__)
 
 INSTITUTES = {
     'ZF': {
-        'name': 'Zukunfsfond',
+        'name': 'Zukunftsfonds',
         'url': 'http://www.zukunftsfonds-austria.at/',
         'logo': 'zf_logo.jpg',
         'member': '',
         'address': ''},
     'MT': {
-        'name': 'Metropolis Austria',
+        'name': 'Metropolis von Austria',
         'url': 'http://www.metropolisvonaustria.at/',
         'logo': 'metropolis.png',
         'member': 'S. Em. Metropolit Arsenios von Austria',
@@ -36,7 +36,7 @@ INSTITUTES = {
     'ABF': {
         'name': 'Abteilung Byzanzforschung (ABF)',
         'url': 'https://www.oeaw.ac.at/en/byzantine-research/',
-        'logo': 'byzantine_research.jpg',
+        'logo': 'oeaw.jpg',
         'member': 'Österreichische Akademie der Wissenschaften (ÖAW) <br> Institut für Mittelalterforschung (IMAFO)',
         'address': 'Hollandstraße 11-13<br> 1020 Wien<br> Österreich'},
     'ACDH': {
@@ -106,11 +106,7 @@ INSTITUTES = {
         'member': '',
         'address': ''}}
 
-MEMBERS = {
-    'Sandra': {
 
-    }
-}
 
 
 @jinja2.contextfilter

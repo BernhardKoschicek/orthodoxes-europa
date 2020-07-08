@@ -38,7 +38,7 @@ projects_ = OrderedDict([
         'number': 'Zukunftsfonds der Republik Österreich P19-3804',
         'duration': '1. Jänner 2018 bis 30. Juni 2019 (18 Monate) ',
         'pi': 'Priv.-Doz. Mag. Dr. Mihailo Popović',
-        'members': ['Sandra Wabnitz', 'Itana Ćupić'],
+        'members': ['Zlatan Stojadinović ', 'Marijana Kokanović Marković', 'Vera Merkel-Tiefenthaler'],
         'institute': ['ABF'],
         'sponsor': ['MA7'],
         'partners': ['AIT'],
