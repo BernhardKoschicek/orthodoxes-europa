@@ -10,14 +10,16 @@ def team() -> str:
     team_ = OrderedDict([
         ('Peter Frauendorfer', {
             'id': '1',
-            'email': 'Sandra.Wabnitz@oeaw.ac.at',
+            'email': 'Peter.Fraundorfer@oeaw.ac.at',
             'function': 'Forschung',
-            'text': """Bachelorstudium Geschichte an der Universität Wien. Anschließend Studium des
-             Masters Geschichtsforschung, historische Hilfswissenschaften und Archivwissenschaften
-              am Institut für Österreichische Geschichtsforschung der Universität Wien;
-               Masterarbeit über die Integration der Barbaren in die lateinische und chinesische
-                Historiographie des Frühmittelalters.""",
-            'img': 'sandra.jpg',
+            'text': """Bachelorstudium Geschichte an der Universität Wien. Anschließend
+Studium des Masters Geschichtsforschung, historische
+Hilfswissenschaften und Archivwissenschaften am Institut für
+Österreichische Geschichtsforschung; Masterarbeit: Das literarische
+Nachleben des heiligen Rupert: Die hoch- und spätmittelalterlichen
+Vitae Ruperti
+""",
+            'img': 'peter.jpg',
         }),
         ('Itana Ćupić', {
             'id': '2',
