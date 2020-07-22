@@ -2,25 +2,29 @@
 {% block title %}Orthodoxes Europa{% endblock %}
 {% block content %}
     <div class="row pt-5">
-    <div class="col-12 text-center">
-     <h4 class="display-4" style="text-align: center">Das Digitales Geoportal der Geschichte der Orthodoxen in
-        Österreich</h4>
-    </div>
-    <div class="astrodivider"><div class="astrodividermask"></div><span><i>&#10009;</i></span></div>
+        <div class="col-12 text-center">
+            <h4 class="display-4" style="text-align: center">Das Digitales Geoportal der Geschichte
+                der Orthodoxen in
+                Österreich</h4>
+        </div>
+        <div class="astrodivider">
+            <div class="astrodividermask"></div>
+            <span><i>&#10009;</i></span></div>
     </div>
     <div class="row pt-2">
         {% for name, item in front_menu.items() %}
             <div class="col-sm-3">
-                <div class="card">
+                <div class="card" style="height: 400px;">
                     <img class="card-img-top"
                          src="{{ url_for('static', filename='images/'+item.image) }}"
                          alt="Card image cap">
                     <div class="card-body text-center">
                         <h5 class="card-title">{{ item.title }}</h5>
                         <p class="card-text">{{ item.subtitle }}</p>
-                        <div class="text-center">
-                            <a href="{{ url_for(name) }}" class="btn btn-info cent tex">{{ item.title }}</a>
-                        </div>
+                    </div>
+                    <div class="card-footer text-center">
+                        <a href="{{ url_for(name) }}"
+                           class="btn btn-info cent tex">{{ item.title }}</a>
                     </div>
                 </div>
             </div>

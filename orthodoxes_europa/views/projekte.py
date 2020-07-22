@@ -58,7 +58,9 @@ projects_ = OrderedDict([
 project_gallery = {
     'lageplan.jpg': 'Lageplan des Flüchtlingslagers Oberhollabrunn '
                     '(<a href="http://www.ffhollabrunn.at/index.php?option=com_content&view=article&id=1159:kommandantentafel&catid=98:geschichte&Itemid=71" target="_blank">http://www.ffhollabrunn.at/</a>)',
-    'lager_oberhollabrunn.jpg': '',
+    'lager_oberhollabrunn.jpg': 'Das Eingangstor zum k.k. Flüchtlingslager Oberhollabrunn im Jahre'
+                                ' 1916 Ecke Wienerstraße/Dr. Kutschergasse, 2020 Hollabrunn'
+                                ' (<a href="https://regiowiki.at/wiki/Datei:Stockerau_Fl%C3%BCchtlingslager.jpg" target="_blank">Wikipedia</a>)',
     'leibnitz_transport.jpg': '',
     'totenschaubefund.jpg': 'Beispiel eines Totenbeschaubefundes (Metropolis von Austria,'
                             ' Archiv der griech.-orient. Kirchengemeinde zur Hl. Dreifaltigkeit, 1010 Wien)',

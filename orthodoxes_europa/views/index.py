@@ -11,13 +11,13 @@ def home() -> str:
     front_menu = OrderedDict([
         ('projekte', {
             'id': '1',
-            'image': 'ratzenstadtl.jpg',
+            'image': 'projekte.jpg',
             'title': 'Projekte',
-            'subtitle': 'Veranstaltungen, Vorträge, Veröffentlichungen und Pressemeldungen'
+            'subtitle': 'Überischt über alle Projekte'
         }),
         ('öffentlichkeitsarbeit', {
             'id': '2',
-            'image': 'ratzenstadtl.jpg',
+            'image': 'oeffentlich.jpg',
             'title': 'Öffentlichkeitsarbeit',
             'subtitle': 'Veranstaltungen, Vorträge, Veröffentlichungen und Pressemeldungen'
         }),
@@ -25,13 +25,13 @@ def home() -> str:
             'id': '3',
             'image': 'Österreich-Europa-Karte.png',
             'title': 'Geoportal',
-            'subtitle': 'Veranstaltungen, Vorträge, Veröffentlichungen und Pressemeldungen'
+            'subtitle': 'Digitale Geoportal der Orthodoxen in Österreich'
         }),
         ('team', {
             'id': '4',
-            'image': 'leibnitz_transport.jpg',
+            'image': 'team.jpg',
             'title': 'Team',
-            'subtitle': 'Veranstaltungen, Vorträge, Veröffentlichungen und Pressemeldungen'
+            'subtitle': 'Vorstellung des Teams'
         })
     ])
 
