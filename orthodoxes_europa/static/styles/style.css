@@ -86,7 +86,7 @@ body {
 }
 
 #team .member:hover .member-info {
-    background: rgba(0, 62, 128, 0.7);
+    background: rgb(138, 205, 206, 0.7);
     opacity: 1;
     transition: 0.4s
 }
@@ -131,9 +131,7 @@ a:hover {
 }
 
 
-
-
-
+/* Divider */
 .astrodivider {
   margin:64px auto;
   width:400px;

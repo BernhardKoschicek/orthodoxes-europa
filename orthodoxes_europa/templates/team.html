@@ -10,9 +10,9 @@
                 {% for name, person in team.items() %}
                     <div class="col-lg-3 col-md-6 wow fadeInUp"
                          style="visibility: visible; animation-name: fadeInUp;" data-toggle="modal"
-                         data-target="#myModal{{ person.id }}">
-                        <div class="modal fade" id="myModal{{ person.id }}" tabindex="-1"
-                             role="dialog" aria-labelledby="myModalLabel"
+                         data-target="#teamModal{{ person.id }}">
+                        <div class="modal fade" id="teamModal{{ person.id }}" tabindex="-1"
+                             role="dialog" aria-labelledby="teamModalLabel"
                              aria-hidden="true">
                             <div class="modal-dialog modal-lg modal-dialog-centered ">
                                 <div class="modal-content">
@@ -40,7 +40,7 @@
                                         </p>
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary"
+                                        <button type="button" class="btn btn-info"
                                                 data-dismiss="modal">Close
                                         </button>
                                     </div>
