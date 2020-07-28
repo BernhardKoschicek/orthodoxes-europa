@@ -1,9 +1,22 @@
 {% extends "layout.html" %}
 {% block title %}Öffentlichkeitsarbeit{% endblock %}
 {% block content %}
-<h4>Öffentlichkeitsarbeit</h4>
-    <p>
-    Veranstaltungen, Vorträge, Veröffentlichungen und Pressemeldungen zu den laufenden Projekten werden hier angekündigt werden.
-    </p>
-
+    <div class="col-md-12">
+        <h3 class="text-center">Öffentlichkeitsarbeit</h3>
+        <p class="text-center">
+            Veranstaltungen, Vorträge, Veröffentlichungen und Pressemeldungen
+        </p>
+    </div>
+        <div class="astrodivider">
+            <div class="astrodividermask"></div>
+            <span><i>&#10009;</i></span>
+        </div>
+    <div class="col-md-12">
+        {% for name, item in public.items() %}
+            <h5>{{ item.title|safe }}</h5>
+            <p class="font-weight-light">{{ item.type }} von {{ item.date }}</p>
+            <p class="justify-content-center">{{ item.description | safe }}</p>
+            <hr>
+        {% endfor %}
+    </div>
 {% endblock %}

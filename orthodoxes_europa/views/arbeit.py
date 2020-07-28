@@ -16,7 +16,7 @@ def öffentlichkeitsarbeit():
          Vergangenheit und Gegenwart im Druck und online veröffentlicht. Darin kommt unter
           anderem Mihailo Popović zum digitalen Geoportal und der Geschichte der Wiener Serben zu
            Wort. Hier im Auszug:</p>
-           <citation> Pour leur remémorer leur passé, l’historien autrichien d’origine serbe
+           <blockquote class="blockquote text-center"><cite> Pour leur remémorer leur passé, l’historien autrichien d’origine serbe
            Mihailo Popovic a créé une application listant toutes les traces historiques de la
             Serbie dans la capitale autrichienne et fait visiter avec passion les églises orthodoxes
              du XVIIIe siècle ou les vieilles boutiques au nom serbe du centre de Vienne. Autant
@@ -27,9 +27,11 @@ def öffentlichkeitsarbeit():
                   combiner les deux mondes, plaide-t-il, en assurant qu’il ne s’agit que d’un retour
                   à la normale après la longue parenthèse des conflits qui ont déchiré l’Europe
                    entre 1914 et 1989. En 1900, Vienne était multiculturelle. Aujourd’hui, elle
-                    l’est simplement redevenue. </citation>
-                    <p>Weitere Informationen unter: <a href="https://www.lemonde.fr/m-le-mag/article/2020/06/05/vienne-imperatrice-de-l-est_6041894_4500055.html" target="_blank">
-                    https://www.lemonde.fr/m-le-mag/article/2020/06/05/vienne-imperatrice-de-l-est_6041894_4500055.html</a></p>
+                    l’est simplement redevenue. </cite>
+                    <footer class="blockquote-footer">Par Jean-Baptiste Chastand (<cite>
+                    <a href="https://www.lemonde.fr/m-le-mag/article/2020/06/05/vienne-imperatrice-de-l-est_6041894_4500055.html"
+                     target="_blank">https://www.lemonde.fr/m-le-mag/article/2020/06/05/vienne-imperatrice-de-l-est_6041894_4500055.html</a></cite> )</footer>
+                    </blockquote>
         """
     })
                           ])

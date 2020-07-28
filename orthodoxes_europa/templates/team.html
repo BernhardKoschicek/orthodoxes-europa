@@ -1,11 +1,12 @@
 {% extends "layout.html" %}
 {% block title %}Team{% endblock %}
 {% block content %}
+    <div class="col-md-12" >
+        <h3 class="text-center">Team</h3>
+    </div>
     <section id="team">
         <div class="container">
-            <div class="section-header">
-                <h3>Team</h3>
-            </div>
+
             <div class="row">
                 {% for name, person in team.items() %}
                     <div class="col-lg-3 col-md-6 wow fadeInUp"
