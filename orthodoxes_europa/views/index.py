@@ -12,7 +12,7 @@ def home() -> str:
             'id': '1',
             'image': 'projekte.jpg',
             'title': 'Projekte',
-            'subtitle': 'Überischt über alle Projekte'
+            'subtitle': 'Übersicht über alle Projekte'
         }),
         ('öffentlichkeitsarbeit', {
             'id': '2',
@@ -24,7 +24,7 @@ def home() -> str:
             'id': '3',
             'image': 'Österreich-Europa-Karte.png',
             'title': 'Geoportal',
-            'subtitle': 'Digitale Geoportal der Orthodoxen in Österreich'
+            'subtitle': 'Digitales Geoportal der Orthodoxen in Österreich'
         }),
         ('team', {
             'id': '4',
@@ -43,8 +43,8 @@ def home() -> str:
         'totenschaubefund.jpg': 'Beispiel eines Totenbeschaubefundes (Metropolis von Austria,'
                                 ' Archiv der griech.-orient. Kirchengemeinde zur Hl. Dreifaltigkeit, 1010 Wien)',
         'sveti_sava.jpg': 'Die serbisch-orthodoxe Kirche zum Heiligen Sava in 1030 Wien (Mihailo St. Popović)',
-        'unterschrift_velimirovic.jpg': 'Ölgemälde des ersten serbischen Erzbischofs des Hl. Sava von Uroš Predić (1857-1953) (Mihailo St. Popović)',
-        'uros_predic.jpg': 'Unterschrift des Hl. Bischofs Nikolaj Velimirović (1881-1956) im Evangelium der Kirche des Hl. Sava (Mihailo St. Popović)'
+        'unterschrift_velimirovic.jpg': 'Unterschrift des Hl. Bischofs Nikolaj Velimirović (1881-1956) im Evangelium der Kirche des Hl. Sava (Mihailo St. Popović)',
+        'uros_predic.jpg': 'Ölgemälde des ersten serbischen Erzbischofs des Hl. Sava von Uroš Predić (1857-1953) (Mihailo St. Popović)'
     }
 
     return render_template('home.html', front_menu=front_menu, home_gallery=home_gallery)

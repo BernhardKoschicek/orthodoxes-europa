@@ -14,7 +14,7 @@ projects_ = OrderedDict([
         'number': 'Zukunftsfonds der Republik Österreich P19-3804',
         'duration': '1. Juli 2020 bis 1. August 2021 (12 Monate)',
         'pi': 'Priv.-Doz. Mag. Dr. Mihailo Popović',
-        'members': ['Peter Frauendorfer', 'Itana Ćupić', 'Sandra Wabnitz'],
+        'members': ['Peter Fraundorfer', 'Verena Demel', 'Sandra Wabnitz (ehrenamtlich)'],
         'institute': ['MT'],
         'sponsor': ['ZF'],
         'partners': ['AIT'],
@@ -65,8 +65,8 @@ project_gallery = {
     'totenschaubefund.jpg': 'Beispiel eines Totenbeschaubefundes (Metropolis von Austria,'
                             ' Archiv der griech.-orient. Kirchengemeinde zur Hl. Dreifaltigkeit, 1010 Wien)',
     'sveti_sava.jpg': 'Die serbisch-orthodoxe Kirche zum Heiligen Sava in 1030 Wien (Mihailo St. Popović)',
-    'unterschrift_velimirovic.jpg': 'Ölgemälde des ersten serbischen Erzbischofs des Hl. Sava von Uroš Predić (1857-1953) (Mihailo St. Popović)',
-    'uros_predic.jpg': 'Unterschrift des Hl. Bischofs Nikolaj Velimirović (1881-1956) im Evangelium der Kirche des Hl. Sava (Mihailo St. Popović)'
+    'unterschrift_velimirovic.jpg': 'Unterschrift des Hl. Bischofs Nikolaj Velimirović (1881-1956) im Evangelium der Kirche des Hl. Sava (Mihailo St. Popović)',
+    'uros_predic.jpg': 'Ölgemälde des ersten serbischen Erzbischofs des Hl. Sava von Uroš Predić (1857-1953) (Mihailo St. Popović)'
 }
 
 

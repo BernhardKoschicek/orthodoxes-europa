@@ -8,34 +8,25 @@ from orthodoxes_europa import app
 @app.route('/team')
 def team() -> str:
     team_ = OrderedDict([
-        ('Peter Frauendorfer', {
+        ('Peter Fraundorfer', {
             'id': '1',
             'email': 'Peter.Fraundorfer@oeaw.ac.at',
             'function': 'Forschung',
             'text': """Bachelorstudium Geschichte an der Universität Wien. Anschließend
-Studium des Masters Geschichtsforschung, historische
-Hilfswissenschaften und Archivwissenschaften am Institut für
-Österreichische Geschichtsforschung; Masterarbeit: Das literarische
-Nachleben des heiligen Rupert: Die hoch- und spätmittelalterlichen
-Vitae Ruperti
-""",
+            Studium des Masters Geschichtsforschung, historische
+            Hilfswissenschaften und Archivwissenschaften am Institut für
+            Österreichische Geschichtsforschung; Masterarbeit: Das literarische
+            Nachleben des heiligen Rupert: Die hoch- und spätmittelalterlichen
+            Vitae Ruperti
+            """,
             'img': 'peter.jpg',
         }),
-        ('Itana Ćupić', {
+        ('Verena Demel ', {
             'id': '2',
-            'email': 'cupicitana@gmail.com',
+            'email': '',
             'function': 'Forschung',
-            'text': """BSc. in Economics, Department of Tourism (2013, Singidunum Universität,
-             Belgrad, Serbien). Masterstudium CREOLE – Cultural Differences and Transnational
-              Processes am Institut für Sozial- und Kulturanthropologie der Universität Wien
-               (seit 2018)
-Initiatorin und Ko-Autorin von „Montenegrins in Austria“, in dessen Rahmen die wissenschaftliche
- Untersuchung mit Bildmaterial „Petar II. Petrović Njegoš in Wien – Der Weg zum Druck des 
- Bergkranzes“ veröffentlicht wurde. Das Projekt wurde von der Botschaft Montenegros in Österreich,
-  dem Außenministerium und dem Kulturministerium Montenegros unterstützt, die begleitende Publikation
-   von der Nationalbibliothek von Montenegro veröffentlicht (2019, Cetinje, Montenegro).
-""",
-            'img': 'itana.jpg',
+            'text': """ """,
+            'img': 'blank.png',
         }),
         ('Rainer Simon', {
             'id': '3',
@@ -57,14 +48,14 @@ Initiatorin und Ko-Autorin von „Montenegrins in Austria“, in dessen Rahmen d
         ('Bernhard Koschicek', {
             'id': '4',
             'email': 'bernhard.koschicek@oeaw.ac.at',
-            'function': 'Backend Development',
+            'function': 'Backend Development (ehrenamtlich)',
             'text': "",
             'img': 'bernhard.png',
         }),
         ('Sandra Wabnitz', {
             'id': '5',
             'email': 'Sandra.Wabnitz@oeaw.ac.at',
-            'function': 'Forschung',
+            'function': 'Forschung (ehrenamtlich)',
             'text': """Bachelorstudium Geschichte an der Universität Wien. Anschließend Studium des
          Masters Geschichtsforschung, historische Hilfswissenschaften und Archivwissenschaften
           am Institut für Österreichische Geschichtsforschung der Universität Wien;
