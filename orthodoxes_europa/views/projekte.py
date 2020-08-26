@@ -10,7 +10,7 @@ projects_ = OrderedDict([
         'image': 'lager_oberhollabrunn.jpg',
         'title': 'Flucht, Gefangenschaft, Neubeginn und Widerstand',
         'subtitle': """Die Orthodoxen in Österreich: Auf der Flucht in der Monarchie – das 
-                        Schicksal der orthodoxen Flüchtlinge im Lager Oberhollabrunn""",
+                        Schicksal der orthodoxen Flüchtlinge im Lager Oberhollabrunn (1914-1918)""",
         'number': 'Zukunftsfonds der Republik Österreich P19-3804',
         'duration': '1. Juli 2020 bis 1. August 2021 (12 Monate)',
         'pi': 'Priv.-Doz. Mag. Dr. Mihailo Popović',
