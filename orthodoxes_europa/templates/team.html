@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 {% block title %}Team{% endblock %}
 {% block content %}
-    <div class="col-md-12" >
+    <div class="col-md-12">
         <h3 class="text-center">Team</h3>
     </div>
 
@@ -28,18 +28,22 @@
                                         </button>
                                     </div>
                                     <div class="modal-body">
-                                        <h6 class="modal-title">{{ person.function }}</h6>
+                                        <h5 class="modal-title">{{ person.function }}</h5>
                                         <div class="container-fluid">
                                             <div class="row">
-                                                <div class="col-md-8"><p>{{ person.text }}</p></div>
+                                                <div class="col-md-8 pt-2">
+                                                    <p>{{ person.text }}</p>
+                                                    <p>
+                                                        <a href="mailto:{{ person.email }}">{{ person.email }}</a>
+                                                    </p>
+                                                </div>
                                                 <div class="col-md-4 ml-auto"><img
                                                         src="/static/images/team/{{ person.img }}"
                                                         class="img-fluid" alt=""></div>
                                             </div>
+
                                         </div>
-                                        <p>
-                                            <a href="mailto:{{ person.email }}">{{ person.email }}</a>
-                                        </p>
+
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-info"

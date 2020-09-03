@@ -67,14 +67,13 @@ def team() -> str:
             'id': '6',
             'email': 'mihailop@hotmail.com',
             'function': 'Projektleiter',
-            'text': """Priv.-Doz. Mag. Dr. phil.; Mag. phil. mit Auszeichnung (Universität Wien, 
-            2000); Dr. phil. mit Auszeichnung (Universität Wien, 2005); Privatdozent der Universität
-             Wien mit der venia docendi "Geschichte Südosteuropas und Byzantinistik" (auf 
-             einstimmigen Beschluß der Universität Wien, 2011). Forschungsschwerpunkte: Geschichte
-              und Kultur Südosteuropas (7.-16. Jahrhundert), spätbyzantinische Geschichte (1204-1453),
-               Gender Studies, historische Geographie und Kartographie des Mittelmeerraums,
-                Digital Humanities und Historical Geographic Information Systems (HGIS), 
-                Orthodoxie und Österreich""",
+            'text': """Seit meinem Studium der Byzantinistik und Neogräzistik sowie 
+            südosteuropäischen Geschichte an der Universität Wien interessiere ich mich für die 
+            mittelalterlichen und neuzeitlichen politischen, geistlichen und kulturellen Beziehungen
+             zwischen unserem Land und Südosteuropa. Ich möchte mit meiner wissenschaftlichen Arbeit
+              das gegenseitige Verständnis und Kennenlernen fördern sowie Brücken zwischen Menschen
+               und Ländern bauen. In einem sich vereinenden Europa ist meiner Meinung nach ein
+                solcher Dialog unerläßlich.""",
             'img': 'mihailo.jpg',
         }),
 
