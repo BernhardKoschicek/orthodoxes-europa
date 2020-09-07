@@ -32,16 +32,15 @@ def team() -> str:
             'id': '3',
             'email': 'Rainer.Simon@ait.ac.at',
             'function': 'App Deveolpment',
-            'text': """Rainer Simon is a Senior Scientist at the AIT Austrian Institute of 
-            Technology. He holds a master’s in telecommunications engineering and a doctorate in 
-            computer science from the Vienna University of Technology. Rainer has been working in 
-            the field of multimedia information management and retrieval for more than 10 years,
-            with a particular focus on technologies and user interfaces that process and visualize
-            geospatial information. His current research interest is in the application of Linked 
-            (Geo) Data methods and visualization techniques in the Digital Humanities and Digital 
-            Librarydomains. Rainer has been involved in several national and international research 
-            projects, published various papers in his area, and served as a programme committee 
-            member and reviewer for relevant scientific workshops and publications in the field.
+            'text': """Ich bin Senior Scientist in der Forschungsgruppe 'Data Science and Artificial
+             Intelligence' am [Austrian Institute of Technology](https://www.ait.ac.at). In meiner
+              Arbeit beschäftige ich mich vorwiegend mit dem Einsatz von Web- und [Linked Data]
+              (https://en.wikipedia.org/wiki/Linked_data)-Technologien im Kultur- und
+               Bibliotheksbereich, sowie in der geisteswissenschaftlichen Forschung. Meine besondere
+                Leidenschaft gilt alten Landkarten, und in vielen meiner Projekte habe ich mich mit
+                 geographischen oder kartographischen Daten beschäftigt. Als leidenschaftlicher
+                  Softwarenentwickler arbeite ich mit verschiedensten Werkzeugen und
+                   Programmiersprachen, in letzter Zeit vorwiegend JavaScript, Python und Scala.
             """,
             'img': 'rainer.jpg',
         }),
