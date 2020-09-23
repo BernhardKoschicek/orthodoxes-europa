@@ -133,42 +133,52 @@ a:hover {
 
 /* Divider */
 .astrodivider {
-  margin:64px auto;
-  width:400px;
-  max-width: 100%;
-  position:relative;
+    margin: 64px auto;
+    width: 400px;
+    max-width: 100%;
+    position: relative;
 }
 
 .astrodividermask {
-    overflow:hidden; height:20px;
+    overflow: hidden;
+    height: 20px;
 }
 
 .astrodividermask:after {
-      content:'';
-      display:block; margin:-25px auto 0;
-      width:100%; height:25px;
-        border-radius:125px / 12px;
-       box-shadow:0 0 8px #049372;
+    content: '';
+    display: block;
+    margin: -25px auto 0;
+    width: 100%;
+    height: 25px;
+    border-radius: 125px / 12px;
+    box-shadow: 0 0 8px #049372;
 }
+
 .astrodivider span {
-    width:50px; height:50px;
-    position:absolute;
-    bottom:100%; margin-bottom:-25px;
-    left:50%; margin-left:-25px;
-    border-radius:100%;
-   box-shadow:0 2px 4px #4fb39c;
-    background:#fff;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 100%;
+    margin-bottom: -25px;
+    left: 50%;
+    margin-left: -25px;
+    border-radius: 100%;
+    box-shadow: 0 2px 4px #4fb39c;
+    background: #fff;
 }
+
 .astrodivider i {
-    position:absolute;
-    top:4px; bottom:4px;
-    left:4px; right:4px;
-    border-radius:100%;
-    border:1px dashed #68beaa;
-    text-align:center;
-    line-height:40px;
-    font-style:normal;
-     color:#049372;
+    position: absolute;
+    top: 4px;
+    bottom: 4px;
+    left: 4px;
+    right: 4px;
+    border-radius: 100%;
+    border: 1px dashed #68beaa;
+    text-align: center;
+    line-height: 40px;
+    font-style: normal;
+    color: #049372;
 }
 
 .institutes {
@@ -178,31 +188,31 @@ a:hover {
 .carousel-control-prev:hover, .carousel-control-prev:focus,
 .carousel-control-next:hover,
 .carousel-control-next:focus {
-  opacity: 0.4;
+    opacity: 0.4;
 }
 
-.carousel-control-prev, .carousel-control-next  {
-  background-color: #8acdce;
+.carousel-control-prev, .carousel-control-next {
+    background-color: #8acdce;
     width: 5%;
 }
 
 .center-cropped {
-  width: 500px;
-  height: 300px;
-  background-position: center center;
-  background-repeat: no-repeat;
-  overflow: hidden;
+    width: 500px;
+    height: 300px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 .center-cropped img {
-  min-height: 100%;
-  min-width: 100%;
-  /* IE 8 */
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  /* IE 5-7 */
-  filter: alpha(opacity=0);
-  /* modern browsers */
-  opacity: 0;
+    min-height: 100%;
+    min-width: 100%;
+    /* IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    /* IE 5-7 */
+    filter: alpha(opacity=0);
+    /* modern browsers */
+    opacity: 0;
 }
 
 .modal-footer {
@@ -212,4 +222,14 @@ a:hover {
 .card-footer {
     background-color: rgba(0, 0, 0, 0.00);
     border-top: 0px;
+}
+
+.modal-body {
+    max-height: calc(100vh - 100px);
+    overflow-y: auto;
+}
+
+.carousel-inner {
+    max-height: calc(500vh - 500px);
+    overflow-y: auto;
 }

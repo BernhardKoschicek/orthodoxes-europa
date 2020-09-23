@@ -23,19 +23,24 @@ def team() -> str:
         }),
         ('Verena Demel ', {
             'id': '2',
-            'email': '',
+            'email': 'ena.demel@gmail.com',
             'function': 'Forschung',
-            'text': """ """,
-            'img': 'blank.png',
+            'text': """Während meines Lehramtsstudiums für Geschichte, Sozialkunde und Politische
+             Bildung beschäftigte ich mich besonders mit Theorien des historischen Denkens und 
+             Lernens sowie der Analyse historischer und musealer Erzählungen.
+             Ich interessiere mich für sozial- und kulturgeschichtliche Themenfelder
+             und freue mich, Teil dieses Projekts zu sein, dessen Forschungsgegenstand
+             der Flucht und Vertreibung aufgrund der leider immer währenden Aktualität
+             besonders spannend ist.""",
+            'img': 'verena.jpg',
         }),
         ('Rainer Simon', {
             'id': '3',
             'email': 'Rainer.Simon@ait.ac.at',
             'function': 'App Deveolpment',
             'text': """Ich bin Senior Scientist in der Forschungsgruppe 'Data Science and Artificial
-             Intelligence' am [Austrian Institute of Technology](https://www.ait.ac.at). In meiner
-              Arbeit beschäftige ich mich vorwiegend mit dem Einsatz von Web- und [Linked Data]
-              (https://en.wikipedia.org/wiki/Linked_data)-Technologien im Kultur- und
+             Intelligence' am <a href="https://www.ait.ac.at" target="_blank">Austrian Institute of Technology</a>. In meiner
+              Arbeit beschäftige ich mich vorwiegend mit dem Einsatz von Web- und <a href="https://en.wikipedia.org/wiki/Linked_data" target="_blank">Linked Data</a>-Technologien im Kultur- und
                Bibliotheksbereich, sowie in der geisteswissenschaftlichen Forschung. Meine besondere
                 Leidenschaft gilt alten Landkarten, und in vielen meiner Projekte habe ich mich mit
                  geographischen oder kartographischen Daten beschäftigt. Als leidenschaftlicher
