@@ -12,12 +12,12 @@ def team() -> str:
             'id': '1',
             'email': 'Peter.Fraundorfer@oeaw.ac.at',
             'function': 'Forschung',
-            'text': """Bachelorstudium Geschichte an der Universität Wien. Anschließend
-            Studium des Masters Geschichtsforschung, historische
-            Hilfswissenschaften und Archivwissenschaften am Institut für
-            Österreichische Geschichtsforschung; Masterarbeit: Das literarische
-            Nachleben des heiligen Rupert: Die hoch- und spätmittelalterlichen
-            Vitae Ruperti
+            'text': """Schon in meinem Bachelorstudium hat mich vor allem die Kirchengeschichte 
+            interessiert. Im Masterstudium am Institut für österreichische Geschichtsforschung 
+            konnte ich dieses Interesse in meiner Masterarbeit über die hoch- und 
+            spätmittelalterlichen Viten des heiligen Rupert ausleben. Es freut mich sehr durch die 
+            Mitarbeit an diesem Projekt meinen forschenden Blick nun auch auf die 
+            griechisch-orthodoxe Seite der europäischen Kirchengeschichte werfen zu dürfen.
             """,
             'img': 'peter.jpg',
         }),
@@ -60,11 +60,13 @@ def team() -> str:
             'id': '5',
             'email': 'Sandra.Wabnitz@oeaw.ac.at',
             'function': 'Forschung (ehrenamtlich)',
-            'text': """Bachelorstudium Geschichte an der Universität Wien. Anschließend Studium des
-         Masters Geschichtsforschung, historische Hilfswissenschaften und Archivwissenschaften
-          am Institut für Österreichische Geschichtsforschung der Universität Wien;
-           Masterarbeit über die Integration der Barbaren in die lateinische und chinesische
-            Historiographie des Frühmittelalters.""",
+            'text': """Im Bachelorstudium Geschichte an der Uni Wien galt mein Interesse vor allem
+             der Zeitgeschichte. Das Masterstudium am Institut für Österreichische
+              Geschichtsforschung habe ich im Schwerpunkt Mittelalter mit einer Masterarbeit über
+               die Integration der Barbaren in die lateinische und chinesische Historiographie des
+                Frühmittelalters abgeschlossen. Ich freue mich Teil dieses Projektes zu sein, da ich
+                 so meine Fähigkeiten, die ich im Masterstudium erworben habe, für ein
+                  zeitgeschichtlichtes Thema einsetzen kann.""",
             'img': 'sandra.jpg',
         }),
         ('Mihailo Popović ', {

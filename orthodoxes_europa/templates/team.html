@@ -4,7 +4,6 @@
     <div class="col-md-12">
         <h3 class="text-center">Team</h3>
     </div>
-
     <section id="team">
         <div class="container">
 
@@ -20,7 +19,6 @@
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <h5 class="modal-title">{{ name }}</h5>
-
                                         <button type="button" class="close"
                                                 data-dismiss="modal"
                                                 aria-label="Close">
@@ -32,7 +30,7 @@
                                         <div class="container-fluid">
                                             <div class="row">
                                                 <div class="col-md-8 pt-2">
-                                                    <p>{{ person.text | safe}}</p>
+                                                    <p>{{ person.text | safe }}</p>
                                                     <p>
                                                         <a href="mailto:{{ person.email }}">{{ person.email }}</a>
                                                     </p>
@@ -41,9 +39,7 @@
                                                         src="/static/images/team/{{ person.img }}"
                                                         class="img-fluid" alt=""></div>
                                             </div>
-
                                         </div>
-
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-info"
