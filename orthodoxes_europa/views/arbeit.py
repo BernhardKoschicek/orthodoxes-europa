@@ -1,15 +1,31 @@
 from collections import OrderedDict
 
-from flask import render_template
+from flask import render_template, url_for
 
 from orthodoxes_europa import app
 
 
 @app.route('/öffentlichkeitsarbeit')
 def öffentlichkeitsarbeit():
-    public = OrderedDict([('Le Monde', {
+    public = OrderedDict([
+        ('Kathpress', {
+            'type': 'Zeitungsartikel',
+            'date': '08. Dezember 2020',
+            'title': 'Auf den Spuren orthodoxer Weltkriegsflüchtlinge in Hollabrunn',
+            'description': """<p>Die kathpress (Katholische Presseagentur Österreich) berichtet in ihrer
+             Information Orthodoxie (Ausgabe Nr. 76, 8. Dezember 2020, Seite 7;
+              <a href="https://www.kathpress.at/goto/meldung/1964124/Auf_den_Spuren_orthodoxer_Weltkriegsfl__chtlinge_in_Hollabrunn"
+               target="_blank">https://www.kathpress.at/goto/meldung/1964124/Auf_den_Spuren_orthodoxer_Weltkriegsfl__chtlinge_in_Hollabrunn</a>)
+                umfassend über unser Forschungsprojekt "Auf der Flucht in der Monarchie – das Schicksal
+                 der orthodoxen Flüchtlinge im Lager Oberhollabrunn (1914-1918)".
+                </p>
+                <p>Bitte sehen Sie dazu im Detail folgenden <a href="{url}" target="_blank">Artikel</a> 
+                </p>
+                """.format(url=url_for('static',
+                                       filename='repository/Kathpress_Orthodoxie_Flüchtlinge_Hollabrunn.pdf'))}),
+        ('Le Monde', {
         'type': 'Zeitungsartikel',
-        'date': '05.Juni 2020',
+        'date': '05. Juni 2020',
         'title': 'Vienne, impératrice de l’Est',
         'description': """<p>Die bekannte französische Tageszeitung Le Monde hat einen Beitrag über
         die Bedeutung der Stadt Wien für die Menschen in Ost- und Südosteuropa im Lauf der
