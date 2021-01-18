@@ -116,6 +116,13 @@ img {
     height: auto;
 }
 
+.icon {
+    display: unset;
+    margin-right: 1em;
+    max-height: 20px;
+    max-width: 20px;
+}
+
 .btn-info {
     background-color: #8acdce;
     border-color: #8acdce;
@@ -232,4 +239,39 @@ a:hover {
 .carousel-inner {
     max-height: calc(500vh - 500px);
     overflow-y: auto;
+}
+
+/* Öffentlichkeitsarbeit */
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border: none;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+}
+
+.card a {
+    color: #212529;
+}
+
+.card a:hover {
+    text-decoration: initial;
+}
+
+.muted i {
+    margin: 0 10px;
+}
+
+.wrapword {
+    white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+    white-space: -webkit-pre-wrap;          /* Chrome & Safari */
+    white-space: -pre-wrap;                 /* Opera 4-6 */
+    white-space: -o-pre-wrap;               /* Opera 7 */
+    white-space: pre-wrap;                  /* CSS3 */
+    word-wrap: break-word;                  /* Internet Explorer 5.5+ */
+    word-break: break-all;
+    white-space: normal;
 }
