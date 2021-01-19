@@ -8,6 +8,25 @@ from orthodoxes_europa import app
 @app.route('/öffentlichkeitsarbeit')
 def öffentlichkeitsarbeit():
     public = OrderedDict([
+        ('Streifzug', {
+            'id': 'Streifzug',
+            'type': 'Vortrag',
+            'date': '16. Jänner 2021',
+            'title': 'Streifzug durch die Religionen',
+            'image': 'streifzug.jpg',
+            'description': """Im Rahmen der Online-Firmvorbereitung des Entwicklungsraums "Donaustadt-Mitte"
+             durfte Mihailo Popović den römisch-katholischen Jugendlichen mit Vertretern anderer
+              Weltreligionen am 16. Jänner 2021 Rede und Antwort stehen....
+                """,
+            'text': """Im Rahmen der Online-Firmvorbereitung des Entwicklungsraums "Donaustadt-Mitte"
+             durfte Mihailo Popović den römisch-katholischen Jugendlichen mit Vertretern anderer
+              Weltreligionen am 16. Jänner 2021 Rede und Antwort stehen. An diesem Abend wurden
+               vor allem besondere Momente bzw. Rituale und Symbole in der Glaubensgemeinschaft
+                sowie Initiationsriten in Bezug auf das Erwachsen werden erörtert. Die Jugendlichen
+                 zeigten großes Interesse an allen vertretenen Religionen und stellten zahlreiche
+                  Fragen.""",
+            'attachment': '<embed src="static/repository/Streifzug_durch_die_Religionen.pdf" width="100%" height="600px" />'
+        }),
         ('Weihnachten', {
             'id': 'Weihnachten',
             'type': 'Video',
