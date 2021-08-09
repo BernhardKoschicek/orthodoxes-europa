@@ -8,6 +8,44 @@ from orthodoxes_europa import app
 @app.route('/öffentlichkeitsarbeit')
 def öffentlichkeitsarbeit():
     public = OrderedDict([
+        ('Digitale Medien Vortrag', {
+            'id': 'Vienne',
+            'type': 'Vortrag',
+            'date': '02. Juli 2021',
+            'title': 'Digitale Medien auf den Spuren der Orthodoxen in Wien: Das Online Geoportal der Geschichte der SerbInnen in Wien (1741–1918) und der Orthodoxen in Österreich',
+            'image': 'digitales_portal_vortrag.png',
+            'description': """<p>Am 2. Juli 2021 hat der Verein der Serben in 
+                der Republik Österreich mit ihrem Präsidenten Aleksandar Stanković
+                zu einem Vortrag von Doz. Dr. Mihailo St. Popović und Zlatan Stojadinović,
+                 BA mit dem Titel "Digitale Medien auf den Spuren der Orthodoxen 
+                 in Wien: Das Online Geoportal der Geschichte der SerbInnen in Wien...</p>""",
+            'text': """<p>
+            Am 2. Juli 2021 hat der Verein der Serben in der Republik Österreich 
+            mit ihrem Präsidenten Aleksandar Stanković zu einem Vortrag von Doz. 
+            Dr. Mihailo St. Popović und Zlatan Stojadinović, BA mit dem Titel 
+            "Digitale Medien auf den Spuren der Orthodoxen in Wien: Das Online 
+            Geoportal der Geschichte der SerbInnen in Wien (1741–1918) und der 
+            Orthodoxen in Österreich" eingeladen. An diesem Publikumsabend haben 
+            die Vortragenden ihre wissenschaftlichen Resultate und vor allem 
+            deren Nutzen für die interessierte Öffentlichkeit vorgestellt. Ein 
+            besonderes Anliegen war ihnen dabei, die panorthodoxe Dimension 
+            dieser Arbeit anzusprechen, weil Mihailo Popović in der Zwischenzeit 
+            eine private Forschungsinitiative und Plattform unter dem Namen 
+            "Digitales Geoportal der Geschichte der Orthodoxen in Österreich" 
+            (<a href="https://orthodoxes-europa.at/">https://orthodoxes-europa.at/</a>) begründet hat, mit der er in 
+            wissenschaftlichen Subprojekten weiterführende Themen zu den 
+            Orthodoxen in Österreich erforscht und ebenfalls online zugänglich 
+            macht.</p><p>
+            Der Vortrag wurde live online übertragen. Die Aufzeichnung ist 
+            abrufbar unter: 
+            <a href="https://www.facebook.com/ljubisa.dimitrijevic.75/videos/490396565588455/">
+            https://www.facebook.com/ljubisa.dimitrijevic.75/videos/490396565588455/
+            </a>
+            </p><p>
+            <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fljubisa.dimitrijevic.75%2Fvideos%2F490396565588455%2F&show_text=false&width=560&t=0" width="600" height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+            </p>
+            """
+        }),
         ('Streifzug', {
             'id': 'Streifzug',
             'type': 'Vortrag',
@@ -102,6 +140,7 @@ def öffentlichkeitsarbeit():
                     </blockquote>
         """
         })
+
     ])
 
     return render_template('arbeit.html', public=public)
