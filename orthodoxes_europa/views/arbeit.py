@@ -13,7 +13,7 @@ def öffentlichkeitsarbeit():
             'type': 'Vortrag',
             'date': '02. Juli 2021',
             'title': 'Digitale Medien auf den Spuren der Orthodoxen in Wien: Das Online Geoportal der Geschichte der SerbInnen in Wien (1741–1918) und der Orthodoxen in Österreich',
-            'image': 'digitales_portal_vortrag.png',
+            'image': 'digitales_portal_vortrag.jpg',
             'description': """<p>Am 2. Juli 2021 hat der Verein der Serben in 
                 der Republik Österreich mit ihrem Präsidenten Aleksandar Stanković
                 zu einem Vortrag von Doz. Dr. Mihailo St. Popović und Zlatan Stojadinović,
