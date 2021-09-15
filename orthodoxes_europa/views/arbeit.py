@@ -9,7 +9,7 @@ from orthodoxes_europa import app
 def öffentlichkeitsarbeit():
     public = OrderedDict([
         ('Digitale Medien Vortrag', {
-            'id': 'Vienne',
+            'id': 'DigitaleMedien',
             'type': 'Vortrag',
             'date': '02. Juli 2021',
             'title': 'Digitale Medien auf den Spuren der Orthodoxen in Wien: Das Online Geoportal der Geschichte der SerbInnen in Wien (1741–1918) und der Orthodoxen in Österreich',
@@ -41,10 +41,9 @@ def öffentlichkeitsarbeit():
             <a href="https://www.facebook.com/ljubisa.dimitrijevic.75/videos/490396565588455/">
             https://www.facebook.com/ljubisa.dimitrijevic.75/videos/490396565588455/
             </a>
-            </p><p>
-            <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fljubisa.dimitrijevic.75%2Fvideos%2F490396565588455%2F&show_text=false&width=560&t=0" width="600" height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
             </p>
-            """
+            """,
+            'attachment': '<iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fljubisa.dimitrijevic.75%2Fvideos%2F490396565588455%2F&show_text=false&width=560&t=0" width="600" height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>'
         }),
         ('Streifzug', {
             'id': 'Streifzug',
@@ -105,6 +104,23 @@ def öffentlichkeitsarbeit():
              der orthodoxen Flüchtlinge im Lager Oberhollabrunn (1914-1918)".
              </p>""",
             'attachment': '<embed src="static/repository/Kathpress_Orthodoxie_Flüchtlinge_Hollabrunn.pdf" width="100%" height="1100px" />'
+        }),
+        ('Relief', {
+            'id': 'Relief',
+            'type': 'Zeitungsartikel',
+            'date': '18. Mai 2020',
+            'title': 'Montenegro im Relief: Terra incognita auf dem Balkan',
+            'image': 'relief.jpg',
+            'description': """<p>DerStandard veröffentlicht in der Kategorie "Wissens
+            -Blogs" einen Beitrag von  Mihailo Popović über die 250m² große Reliefkarte von und in Montenegro,
+            die während dem Ersten Weltkrieg von der  k. u. k. Armee erbaut wurde...
+                """,
+            'text': """<p>
+            <a href="https://www.derstandard.at/">DerStandard</a> veröffentlicht in der Kategorie "Wissens
+            -Blogs" einen Beitrag von  
+            <a href="https://www.derstandard.at/story/2000117505690/montenegro-im-relief-terra-incognita-auf-dem-balkan?fbclid=IwAR2blOQJUHrKWrQrAycc-3SIoMHzksp1HFqz3eX-jW5EU5S7gmqzRiLrtmk">Mihailo Popović, "Montenegro im Relief: Terra incognita auf dem Balkan"</a>, über die 250m² große Reliefkarte von und in Montenegro,
+            die während dem Ersten Weltkrieg von der  k. u. k. Armee erbaut wurde.
+             </p>"""
         }),
         ('Le Monde', {
             'id': 'Vienne',
