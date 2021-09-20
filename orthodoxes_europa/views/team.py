@@ -10,7 +10,6 @@ def team() -> str:
     team_ = OrderedDict([
         ('Peter Fraundorfer', {
             'id': '1',
-            'email': 'Peter.Fraundorfer@oeaw.ac.at',
             'function': 'Forschung',
             'text': """Schon in meinem Bachelorstudium hat mich vor allem die Kirchengeschichte 
             interessiert. Im Masterstudium am Institut für österreichische Geschichtsforschung 
@@ -23,7 +22,6 @@ def team() -> str:
         }),
         ('Verena Demel ', {
             'id': '2',
-            'email': 'ena.demel@gmail.com',
             'function': 'Forschung',
             'text': """Während meines Lehramtsstudiums für Geschichte, Sozialkunde und Politische
              Bildung beschäftigte ich mich besonders mit Theorien des historischen Denkens und 
@@ -36,7 +34,6 @@ def team() -> str:
         }),
         ('Rainer Simon', {
             'id': '3',
-            'email': 'Rainer.Simon@ait.ac.at',
             'function': 'App Deveolpment',
             'text': """Ich bin Senior Scientist in der Forschungsgruppe 'Data Science and Artificial
              Intelligence' am <a href="https://www.ait.ac.at" target="_blank">Austrian Institute of Technology</a>. In meiner
@@ -51,14 +48,12 @@ def team() -> str:
         }),
         ('Bernhard Koschicek', {
             'id': '4',
-            'email': 'bernhard.koschicek@oeaw.ac.at',
             'function': 'Backend Development (ehrenamtlich)',
             'text': "",
             'img': 'bernhard.png',
         }),
         ('Sandra Wabnitz', {
             'id': '5',
-            'email': 'Sandra.Wabnitz@oeaw.ac.at',
             'function': 'Forschung (ehrenamtlich)',
             'text': """Im Bachelorstudium Geschichte an der Uni Wien galt mein Interesse vor allem
              der Zeitgeschichte. Das Masterstudium am Institut für Österreichische
@@ -71,7 +66,6 @@ def team() -> str:
         }),
         ('Mihailo Popović ', {
             'id': '6',
-            'email': 'mihailop@hotmail.com',
             'function': 'Projektleiter',
             'text': """Seit meinem Studium der Byzantinistik und Neogräzistik sowie 
             südosteuropäischen Geschichte an der Universität Wien interessiere ich mich für die 
