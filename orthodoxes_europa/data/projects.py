@@ -1,8 +1,5 @@
 from collections import OrderedDict
 
-from flask import render_template
-
-from orthodoxes_europa import app
 
 projects_ = OrderedDict([
     ('Flucht-Gefangenschaft-Neubeginn-und-Widerstand', {
@@ -12,8 +9,8 @@ projects_ = OrderedDict([
         'subtitle': """Die Orthodoxen in Österreich: Auf der Flucht in der Monarchie – das 
                         Schicksal der orthodoxen Flüchtlinge im Lager Oberhollabrunn (1914-1918)""",
         'number': 'Zukunftsfonds der Republik Österreich P19-3804',
-        'duration': '1. Juli 2020 bis 31. August 2021 (13 Monate)',
-        'pi': 'Priv.-Doz. Mag. Dr. Mihailo Popović',
+        'duration': '1. Juli 2020 bis 31. Oktober 2021 (16 Monate)',
+        'pi': 'Doz. Mag. Dr. Mihailo Popović',
         'members': ['Peter Fraundorfer', 'Verena Demel', 'Sandra Wabnitz (ehrenamtlich)'],
         'institute': ['MT'],
         'sponsor': ['ZF'],
@@ -39,7 +36,7 @@ projects_ = OrderedDict([
         'subtitle': '',
         'number': 'Zukunftsfonds der Republik Österreich P19-3804',
         'duration': '1. Jänner 2018 bis 30. Juni 2019 (18 Monate) ',
-        'pi': 'Priv.-Doz. Mag. Dr. Mihailo Popović',
+        'pi': 'Doz. Mag. Dr. Mihailo Popović',
         'members': ['Zlatan Stojadinović ', 'Marijana Kokanović Marković',
                     'Vera Merkel-Tiefenthaler'],
         'institute': ['ABF'],
@@ -68,12 +65,3 @@ project_gallery = {
     'unterschrift_velimirovic.jpg': 'Unterschrift des Hl. Bischofs Nikolaj Velimirović (1881-1956) im Evangelium der Kirche des Hl. Sava (Mihailo St. Popović)',
     'uros_predic.jpg': 'Ölgemälde des ersten serbischen Erzbischofs des Hl. Sava von Uroš Predić (1857-1953) (Mihailo St. Popović)'
 }
-
-
-@app.route('/projekte', methods=['GET'])
-@app.route('/projekte/<projekt>', methods=['GET'])
-def projekte(projekt=None):
-    if projekt:
-        return render_template('projekt_details.html', projekt=projects_[projekt], gallerie=project_gallery)
-    else:
-        return render_template('projekte.html', projects=projects_)

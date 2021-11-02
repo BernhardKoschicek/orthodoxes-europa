@@ -1,10 +1,11 @@
 {% extends "layout.html" %}
 {% block title %}Geoportal{% endblock %}
 {% block content %}
+  {{ header('Geoportal der Geschichte der Orthodoxen in Österreich') }}
     <div class="container" style="max-width: 1920px; display: flex;">
-<div class="embed-responsive embed-responsive-1by1">
-{#    <iframe src="https://orthodoxes-wien.oeaw.ac.at/portal/" class="embed-responsive-item" ></iframe>#}
-    <iframe src="https://geoportal.orthodoxes-europa.at/" class="embed-responsive-item" ></iframe>
-</div>
+        <div class="embed-responsive embed-responsive-1by1">
+            <iframe src="https://geoportal.orthodoxes-europa.at/"
+                    class="embed-responsive-item"></iframe>
+        </div>
     </div>
 {% endblock %}

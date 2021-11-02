@@ -4,7 +4,8 @@ import flask
 import jinja2
 from flask import url_for
 
-from orthodoxes_europa.views import projekte
+
+from orthodoxes_europa.data.projects import projects_
 
 blueprint: flask.Blueprint = flask.Blueprint('filters', __name__)
 
@@ -114,8 +115,8 @@ INSTITUTES = {
 def display_menu(self: Any, route: str) -> str:
     """ Returns HTML with the menu and mark appropriate item as selected."""
     html = ''
-    items = ['projekte', 'öffentlichkeitsarbeit', 'team', 'geoportal', 'download',
-             'verein', 'impressum']
+    items = ['projekte', 'öffentlichkeitsarbeit', 'team', 'geoportal',
+             'download', 'veröffentlichung', 'verein', 'impressum']
     for item in items:
         active = ''
         if route.startswith('/' + item):
@@ -128,9 +129,9 @@ def display_menu(self: Any, route: str) -> str:
                     <a class ="dropdown-item" href="{url}">Übersicht</a>
                     <div class="dropdown-divider"></div>""".format(
                     active=active, url=url_for(item), label=item.title())
-            for projekt in projekte.projects_:
+            for project in projects_:
                 html += '<a class ="dropdown-item" href="{url}">{label}</a>'.format(
-                    url=url_for(item, projekt=projekt, _method='GET'), label=projekt.replace('-', ' '))
+                    url=url_for(item, projekt=project, _method='GET'), label=project.replace('-', ' '))
 
             html += '  </div></div>'
         else:

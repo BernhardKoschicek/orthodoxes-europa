@@ -1,0 +1,18 @@
+{% macro build_cards(front_menu) %}
+  {% for name, item in front_menu.items() %}
+    <div class="col-sm-3">
+      <div class="card">
+        <a href="{{ url_for(name) }}" class="btn btn-warning"
+           style="height: auto; min-height: 330px;">
+          <img class="card-img-top"
+               src="{{ url_for('static', filename='images/'+item.image) }}"
+               alt="Card image cap">
+          <div class="card-body text-center">
+            <h5 class="card-title">{{ item.title }}</h5>
+            <p class="card-text">{{ item.subtitle }}</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  {% endfor %}
+{% endmacro %}

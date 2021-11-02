@@ -1,0 +1,18 @@
+<nav class="navbar navbar-expand-lg navbar-light static-top mb-4">
+    <div class="container">
+        <a class="navbar-brand" href="{{ url_for('home') }}">
+            <img src="{{ url_for('static', filename='images/logo.png') }}"
+                 alt="Logo" style="max-height: 100px">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <div class="navbar-nav">
+                {{ request.path|display_menu|safe }}
+            </div>
+        </div>
+    </div>
+</nav>

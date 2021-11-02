@@ -132,6 +132,14 @@ a:hover {
     text-decoration: none;
 }
 
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+    background-color: #d9b248;
+}
+
+.btn-warning {
+    background-color: #d9b248;
+}
 
 /* Divider */
 .astrodivider {
