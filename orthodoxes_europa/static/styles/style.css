@@ -31,7 +31,7 @@ body {
 
 .section-header h3 {
     font-size: 36px;
-    color: #b9880c;
+    color: #a08952;
     text-align: center;
     font-weight: 500;
     position: relative
@@ -86,7 +86,7 @@ body {
 }
 
 #team .member:hover .member-info {
-    background: rgba(240, 208, 119, 0.7);
+    background: rgba(160, 137, 82, 0.6);
     opacity: 1;
     transition: 0.4s
 }
@@ -124,21 +124,27 @@ img {
 }
 
 a {
-    color: #e3ad1d;
+    color: #a08952;
 }
 
 a:hover {
-    color: #f0d077;
+    color: #e3ad1d;
     text-decoration: none;
 }
 
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
-    background-color: #d9b248;
+    background-color: #a08952;
 }
 
 .btn-warning {
-    background-color: #d9b248;
+    background-color: #a08952;
+    border-color: #a08952;
+}
+.btn-warning:hover {
+  color: #212529;
+    background-color: #cbaa3d;
+    border-color: #cbaa3d;
 }
 
 /* Divider */
@@ -161,7 +167,7 @@ a:hover {
     width: 100%;
     height: 25px;
     border-radius: 125px / 12px;
-    box-shadow: 0 0 8px #d5b563;
+    box-shadow: 0 0 8px #a08952;
 }
 
 .astrodivider span {
@@ -173,7 +179,7 @@ a:hover {
     left: 50%;
     margin-left: -25px;
     border-radius: 100%;
-    box-shadow: 0 2px 4px #e3c066;
+    box-shadow: 0 2px 4px #a08952;
     background: #fff;
 }
 
@@ -188,7 +194,7 @@ a:hover {
     text-align: center;
     line-height: 40px;
     font-style: normal;
-    color: #d9b248;
+    color: #a08952;
 }
 
 .institutes {
@@ -202,7 +208,7 @@ a:hover {
 }
 
 .carousel-control-prev, .carousel-control-next {
-    background-color: #ecce88;
+    background-color: #a08952;
     width: 5%;
 }
 
@@ -262,19 +268,4 @@ a:hover {
 
 .card a:hover {
     text-decoration: initial;
-}
-
-.muted i {
-    margin: 0 10px;
-}
-
-.wrapword {
-    white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
-    white-space: -webkit-pre-wrap;          /* Chrome & Safari */
-    white-space: -pre-wrap;                 /* Opera 4-6 */
-    white-space: -o-pre-wrap;               /* Opera 7 */
-    white-space: pre-wrap;                  /* CSS3 */
-    word-wrap: break-word;                  /* Internet Explorer 5.5+ */
-    word-break: break-all;
-    white-space: normal;
 }
