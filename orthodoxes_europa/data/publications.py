@@ -21,7 +21,7 @@ publications = {
         "date": "2003",
         "location": "",
         "pages": "271-292",
-        "filename": ""
+        "filename": "MPopovicTheGoldenBook.pdf"
     },
     "odnos": {
         "author": "Михаило Поповић",
@@ -29,7 +29,7 @@ publications = {
         "date": "2010",
         "location": "Wien-Belgrad",
         "pages": "86-101",
-        "filename": ""
+        "filename": "MPopovicOdnos.pdf"
     },
     "theophanis": {
         "author": "Mihailo Popović",

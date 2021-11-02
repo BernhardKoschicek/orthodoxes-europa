@@ -2,30 +2,26 @@
 {% block title %}Veröffentlichungen{% endblock %}
 {% block content %}
   {{ header('Veröffentlichungen') }}
-  <div class="row">
-    <div class="col-md-12">
-      <h1 class="text-center font-italic">Die Orthodoxie zwischen Orient
-        und Okzident</h1>
-    </div>
-    <div class="row">
-      <div class="col-8">
-        <p>Das Buch von Mihailo St. Popović mit dem Titel "Mara
-          Branković: Eine Frau zwischen dem christlichen und dem
-          islamischen Kulturkreis im 15. Jahrhundert" befaßt sich mit
-          dem Leben und den Taten der serbischen Prinzessin Mara (ca.
-          1418-1487) aus der adeligen Familie Branković, die als
-          Vermittlerin zwischen dem Orient und Okzident, zwischen der
-          Orthodoxie, dem Katholizismus und dem Islam tätig war und
-          die eine große Stifterin verschiedener orthodoxer Kirchen
-          und Klöster in Südosteuropa war.</p>
-      </div>
-      <div class="col-2">
-        <img src="{{ url_for("static", filename='images/veroeffentlichung/mara_brankovic_deutsch.jpg') }}"
-             alt="Mara Brankovic Deutsch">
-      </div>
-    </div>
+
+  <div class="col-md-12">
+    <ul class="nav nav-tabs" id="veroeffentlichungen" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="home-tab" data-toggle="tab"
+           href="#orient" role="tab" aria-controls="home"
+           aria-selected="true">
+          <h6 class="display-6">
+            Orthodoxie zwischen Orient und Okzident
+          </h6>
+        </a>
+      </li>
+    </ul>
 
   </div>
+
+  <div class="tab-content" id="veroeffentlichungenContent">
+    {% include "veroeffentlichung/orient.html" %}
+  </div>
+
 
 
 

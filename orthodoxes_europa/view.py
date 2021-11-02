@@ -6,6 +6,7 @@ from orthodoxes_europa.data.index import front_menu, home_gallery
 from orthodoxes_europa.data.projects import project_gallery, projects_
 from orthodoxes_europa.data.public_relations import public
 from orthodoxes_europa.data.publications import publications
+from orthodoxes_europa.data.software import software
 from orthodoxes_europa.data.team import team_
 
 
@@ -39,7 +40,10 @@ def veröffentlichung():
 
 @app.route('/download')
 def download():
-    return render_template('download.html', publications=publications)
+    return render_template(
+        'download.html',
+        publications=publications,
+        software=software)
 
 
 @app.route('/geoportal')

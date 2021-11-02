@@ -21,12 +21,15 @@
         <div class="tab-pane fade show active" id="v-pills-software"
              role="tabpanel"
              aria-labelledby="v-pills-software-tab">
-          {% include 'download/software.html' %}
+          {% with software=software %}
+            {% include 'download/software.html' %}
+          {% endwith %}
+
         </div>
         <div class="tab-pane fade" id="v-pills-publications" role="tabpanel"
              aria-labelledby="v-pills-publications-tab">
           {% with publications=publications %}
-            {% include 'download/publication.html'%}
+            {% include 'download/publication.html' %}
           {% endwith %}
 
         </div>

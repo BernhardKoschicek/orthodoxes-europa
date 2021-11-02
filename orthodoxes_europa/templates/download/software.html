@@ -1,36 +1,55 @@
 <div class="row">
-  <div class="col-9">
-    Das <h5>digitale Geoportal der Geschichte der Orthodoxen in Österreich</h5>
-    <p class="text-justify">
-      ... hat das Ziel, die Geschichte,
-      den Glauben und die Kultur der orthodoxen Kirchen und von deren Gläubigen
-      in Europa, mit einem Schwerpunkt
-      auf Österreich, mit Hilfe von wissenschaftlichen Projekten zu erforschen
-      und einer breiten Öffentlichkeit
-      zugänglich zu machen.
-    </p>
-    <div class="d-flex">
-      <ul class="list-group list-group-horizontal list-unstyled list-group-flush mx-auto  justify-content-center">
-        <li class="list-group-item">
-          <a href="https://geoportal.orthodoxes-europa.at/">
-            <i class="bi bi-globe2" style="font-size: 1.5em;"></i>
-          </a>
-        </li>
-        <li class="list-group-item">
-          <a href="mailto:rainer.simon@ait.ac.at">
-            <i class="bi bi-envelope-fill" style="font-size: 1.5em;"></i>
-          </a>
-        </li>
-        <li class="list-group-item">
-          <a href="https://github.com/rsimon/zukunftsfonds-mobile-site">
-            <i class="bi bi-github" style="font-size: 1.5em;"></i>
-          </a>
-        </li>
-      </ul>
+  {% for id, content in software.items() %}
+    <div class="col-9 pb-5">
+      <h5>{{ content.title }}</h5>
+      <p class="text-justify">
+        {{ content.text }}
+      </p>
+      <div class="d-flex">
+        <ul class="list-group list-group-horizontal list-unstyled list-group-flush mx-auto  justify-content-center">
+          {% if content.website %}
+            <li class="list-group-item">
+              <a href="{{ content.website }}">
+                <i class="bi bi-globe2 icon-size"></i>
+              </a>
+            </li>
+          {% endif %}
+          {% if content.contact %}
+            <li class="list-group-item">
+              <a href="mailto:{{ content.contact }}">
+                <i class="bi bi-envelope-fill icon-size"></i>
+              </a>
+            </li>
+          {% endif %}
+          {% if content.github %}
+            <li class="list-group-item">
+              <a href="https://github.com/rsimon/zukunftsfonds-mobile-site">
+                <i class="bi bi-github icon-size"></i>
+              </a>
+            </li>
+          {% endif %}
+          {% if content.twitter %}
+                  <li class="list-group-item">
+              <a href="{{ content.twitter }}">
+                <i class="bi bi-twitter icon-size"></i>
+              </a>
+            </li>
+          {% endif %}
+          {% if content.facebook %}
+                  <li class="list-group-item">
+              <a href="{{ content.facebook }}">
+                <i class="bi bi-facebook icon-size"></i>
+              </a>
+            </li>
+          {% endif %}
+        </ul>
+      </div>
     </div>
-  </div>
-  <div class="col-3">
-    <img src="{{ url_for('static', filename='images/qr_geoportal.svg') }}"
-         alt="QR Code">
-  </div>
+    <div class="col-3">
+    {% if content.qr_code %}
+      <img src="{{ url_for('static', filename='images/'+  content.qr_code) }}"
+           alt="QR Code">
+    {% endif %}
+    </div>
+  {% endfor %}
 </div>
