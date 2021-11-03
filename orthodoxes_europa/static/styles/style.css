@@ -1,5 +1,4 @@
 body {
-
     background-image: url(../images/background.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -121,6 +120,10 @@ img {
     margin-right: 1em;
     max-height: 20px;
     max-width: 20px;
+}
+
+p {
+    font-size: 1.1em;
 }
 
 a {

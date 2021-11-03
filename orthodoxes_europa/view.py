@@ -35,10 +35,10 @@ def öffentlichkeitsarbeit():
     return render_template('arbeit.html', public=public)
 
 
-@app.route('/veröffentlichung')
-def veröffentlichung():
+@app.route('/veröffentlichungen')
+def veröffentlichungen():
     return render_template(
-        'veroeffentlichung.html',
+        'veroeffentlichungen.html',
         publications=publications)
 
 
