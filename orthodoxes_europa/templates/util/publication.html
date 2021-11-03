@@ -1,0 +1,37 @@
+<div class="table-responsive-md">
+  <table class=" table  table-borderless table-sm table-striped table-hover "
+         style="width:100%">
+    <thead>
+    <tr>
+      <th class="text-center">Autor</th>
+      <th class="text-center">Titel</th>
+      <th class="text-center">Ort</th>
+      <th class="text-center">Datum</th>
+      <th class="text-center">Seiten</th>
+      <th class="text-center">PDF</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for id, publication in publications.items() %}
+      {% if category in publication.category %}
+        <tr>
+          <td> {{ publication.author }}</td>
+          <td> {{ publication.title }}</td>
+          <td> {{ publication.location }}</td>
+          <td> {{ publication.date }}</td>
+          <td> {{ publication.pages }}</td>
+          <td>
+            {% if publication.filename %}
+              <a href="{{ url_for("static", filename='repository/'+publication.filename) }}"
+                 target="_blank">
+                <i class="bi bi-box-arrow-in-up-right"></i>
+              </a>
+            {% endif %}
+          </td>
+        </tr>
+      {% endif %}
+    {% endfor %}
+    </tbody>
+  </table>
+</div>
+

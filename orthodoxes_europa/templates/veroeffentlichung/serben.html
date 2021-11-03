@@ -1,0 +1,15 @@
+<h5 class="text-center font-italic display-4">
+  Die Wiener Serben und Griechen
+</h5>
+<div class="row">
+  <div class="col-10">
+    <p class="text-justify">In diesem Abschnitt finden Sie ausgewählte
+      wissenschaftliche Arbeiten zu den Wiener Serben und Griechen durch die
+      Jahrhunderte mit entsprechenden pdf-Dateien:</p>
+  </div>
+</div>
+<div class="row-cols-auto">
+    {% with publications=publications, category="serben" %}
+    {% include 'util/publication.html' %}
+  {% endwith %}
+</div>

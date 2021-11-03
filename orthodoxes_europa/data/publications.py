@@ -5,7 +5,8 @@ publications = {
         "date": "2002",
         "location": "Wien",
         "pages": "149-159",
-        "filename": "MPopovicDemeterTheodorTirka.pdf"
+        "filename": "MPopovicDemeterTheodorTirka.pdf",
+        "category": ["all", "serben"]
     },
     "autograph": {
         "author": "Mihailo Popović",
@@ -13,7 +14,8 @@ publications = {
         "date": "2002",
         "location": "Wien",
         "pages": "271-279",
-        "filename": "MPopovicEinAutograph.pdf"
+        "filename": "MPopovicEinAutograph.pdf",
+        "category": ["all", "serben"]
     },
     "golden": {
         "author": "Mihailo Popović",
@@ -21,7 +23,8 @@ publications = {
         "date": "2003",
         "location": "",
         "pages": "271-292",
-        "filename": "MPopovicTheGoldenBook.pdf"
+        "filename": "MPopovicTheGoldenBook.pdf",
+        "category": ["all", "serben"]
     },
     "odnos": {
         "author": "Михаило Поповић",
@@ -29,14 +32,25 @@ publications = {
         "date": "2010",
         "location": "Wien-Belgrad",
         "pages": "86-101",
-        "filename": "MPopovicOdnos.pdf"
+        "filename": "MPopovicOdnos.pdf",
+        "category": ["all", "serben"]
     },
     "theophanis": {
-        "author": "Mihailo Popović",
-        "title": "Theophanis Pampas, Lemma Tirka Demeter Theodor, in: Österreichisches Biographisches Lexikon 1815-1950, 65. Lieferung, ed. Österreichische Akademie der Wissenschaften.",
+        "author": "Mihailo Popović, Theophanis Pampas",
+        "title": "Lemma Tirka Demeter Theodor, in: Österreichisches Biographisches Lexikon 1815-1950, 65. Lieferung, ed. Österreichische Akademie der Wissenschaften.",
         "date": "2014",
         "location": "Wien",
         "pages": "353",
-        "filename": "MPopovicDemeterTheodorTirka.pdf"
+        "filename": "MPopovicDemeterTheodorTirka.pdf",
+        "category": ["all", "serben"]
+    },
+    "serbisch": {
+        "author": "Mihailo Popović, Theophanis Pampas",
+        "title": "Η σερβική-oρθόδoξη εκκλησία της Βιέvvης, η εvoρία της και η σχέση της με τoυς Έλληvες της Βιέvvης. Η ΑΚΑΤΟΣ, Περιoδική Έκδoση τoυ Συλλόγoυ Ελλήvωv Φoιτητώv και Επιστημόvωv Βιέvvης 3/2.",
+        "date": "1999",
+        "location": "",
+        "pages": "16-17",
+        "filename": "MPopovicHeserbike.pdf",
+        "category": ["all"]
     },
 }

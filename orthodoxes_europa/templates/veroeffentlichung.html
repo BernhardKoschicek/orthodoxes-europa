@@ -4,7 +4,7 @@
   {{ header('Veröffentlichungen') }}
 
   <div class="col-md-12">
-    <ul class="nav nav-tabs" id="veroeffentlichungen" role="tablist">
+    <ul class="nav nav-tabs" id="public" role="tablist">
       <li class="nav-item">
         <a class="nav-link active" id="home-tab" data-toggle="tab"
            href="#orient" role="tab" aria-controls="home"
@@ -14,12 +14,28 @@
           </h6>
         </a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" id="home-tab" data-toggle="tab"
+           href="#serben" role="tab" aria-controls="home"
+           aria-selected="true">
+          <h6 class="display-6">
+            Die Wiener Serben und Griechen
+          </h6>
+        </a>
+      </li>
     </ul>
 
   </div>
 
-  <div class="tab-content" id="veroeffentlichungenContent">
-    {% include "veroeffentlichung/orient.html" %}
+  <div class="tab-content" id="publicContent">
+    <div class="tab-pane fade show active pt-3" id="orient" role="tabpanel"
+         aria-labelledby="home-tab">
+      {% include "veroeffentlichung/orient.html" %}
+    </div>
+    <div class="tab-pane fade show pt-3" id="serben" role="tabpanel"
+         aria-labelledby="home-tab">
+      {% include "veroeffentlichung/serben.html" %}
+    </div>
   </div>
 
 

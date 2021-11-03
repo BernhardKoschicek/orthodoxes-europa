@@ -1,5 +1,6 @@
 from collections import OrderedDict
 from flask import render_template
+import itertools
 
 from orthodoxes_europa import app
 from orthodoxes_europa.data.index import front_menu, home_gallery
@@ -8,6 +9,7 @@ from orthodoxes_europa.data.public_relations import public
 from orthodoxes_europa.data.publications import publications
 from orthodoxes_europa.data.software import software
 from orthodoxes_europa.data.team import team_
+
 
 
 @app.route('/')
@@ -35,7 +37,9 @@ def öffentlichkeitsarbeit():
 
 @app.route('/veröffentlichung')
 def veröffentlichung():
-    return render_template('veroeffentlichung.html')
+    return render_template(
+        'veroeffentlichung.html',
+        publications=publications)
 
 
 @app.route('/download')
@@ -43,7 +47,8 @@ def download():
     return render_template(
         'download.html',
         publications=publications,
-        software=software)
+        software=software,
+        category=list(itertools.chain.from_iterable([cat['category'] for id, cat in publications.items()])))
 
 
 @app.route('/geoportal')
