@@ -1,6 +1,22 @@
 from collections import OrderedDict
 
 public = OrderedDict([(
+    'Projekttreffen', {
+        'id': 'Meeting',
+        'type': 'Meeting',
+        'date': 'über das Jahr 2021',
+        'title': 'Arbeitstreffen für „Auf der Flucht in der Monarchie – das Schicksal der orthodoxen Flüchtlinge im Lager Oberhollabrunn (1914-1918)“ ',
+        'image': 'meeting.jpg',
+        'description': """<p>Im Rahmen des Projektes „Auf der Flucht in der
+         Monarchie – das Schicksal der orthodoxen Flüchtlinge im Lager
+          Oberhollabrunn (1914-1918)“ hatte das Projektteam die Möglichkeit ...
+           </p>""",
+        'text': """<p>
+      Im Rahmen des Projektes „Auf der Flucht in der Monarchie – das Schicksal der orthodoxen Flüchtlinge im Lager Oberhollabrunn (1914-1918)“ (Zukunftsfonds der Republik Österreich, Projekt P19-3804) hatte das Projektteam die Möglichkeit, Fragen der Softwareentwicklung, der erzielten Ergebnisse sowie einer online Ausstellung bei persönlichen Treffen am 21.05.2021, 25.06.2021, 16.08.2021, 18.09.2021 und 16.10.2021 unter Beachtung aller COVID-Maßnahmen im Redemptoristenkolleg Maria am Gestade in 1010 Wien zu diskutieren. Diese Treffen haben maßgeblich zum erfolgreichen Abschluß des Projektes beigetragen, wofür wir dem Redemptoristenkolleg als Ort der Versammlung und Ruhe herzlich danken möchten.
+            </p>
+            """,
+        'attachment': '<img src="static/images/arbeit/meeting.jpg" class="rounded mx-auto d-block" alt="Meeting">'
+    }), (
     'Digitale Medien Vortrag', {
         'id': 'DigitaleMedien',
         'type': 'Vortrag',

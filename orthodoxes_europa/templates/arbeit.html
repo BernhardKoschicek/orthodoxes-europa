@@ -7,7 +7,7 @@
 
   <div class="card-columns">
     {% for name, item in public.items() %}
-      <div class="card">
+      <div class="card text-justify">
         <a href="#" data-toggle="modal"
            data-target="#arbeit-{{ item.id }}">
           <img class="card-img-top"
@@ -15,7 +15,7 @@
                alt="{{ item.image }}">
           <div class="card-body">
             <h5 class="card-title">{{ item.title|safe }}</h5>
-            <p class="card-text">
+            <p class="card-text text-justify">
               {{ item.description | safe }}
             </p>
             <p class="card-text">
@@ -29,7 +29,7 @@
           </div>
         </a>
       </div>
-      <div class="modal fade" id="arbeit-{{ item.id }}" tabindex="-1"
+      <div class="modal fade text-justify" id="arbeit-{{ item.id }}" tabindex="-1"
            role="dialog" aria-labelledby="arbeitModalLabel"
            aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered">
@@ -46,13 +46,14 @@
               <div class="container-fluid">
                 <div class="row">
                   <div class="col-md-12">
-                    <p>
+                    <p class="text-justify">
                       <img src="/static/images/icons/calendar4-week.svg"
                            class="icon"
                            alt=""
                            title="Calendar">{{ item.type }} von {{ item.date }}
-                    </p>
+
                     {{ item.text | safe }}
+                      </p>
                   </div>
                 </div>
                 <div class="row">
