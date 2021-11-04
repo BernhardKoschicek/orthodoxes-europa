@@ -45,12 +45,12 @@ publications = {
         "category": ["all", "serben"]
     },
     "serbisch": {
-        "author": "Mihailo Popović, Theophanis Pampas",
+        "author": "Mihailo Popović",
         "title": "Η σερβική-oρθόδoξη εκκλησία της Βιέvvης, η εvoρία της και η σχέση της με τoυς Έλληvες της Βιέvvης. Η ΑΚΑΤΟΣ, Περιoδική Έκδoση τoυ Συλλόγoυ Ελλήvωv Φoιτητώv και Επιστημόvωv Βιέvvης 3/2.",
         "date": "1999",
         "location": "",
         "pages": "16-17",
         "filename": "MPopovicHeserbike.pdf",
-        "category": ["all"]
+        "category": ["all", "serben"]
     },
 }
