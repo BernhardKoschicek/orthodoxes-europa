@@ -3,7 +3,7 @@ from collections import OrderedDict
 projects_ = OrderedDict([
     ('Ein-Blick-in-die-gemeinsame-Vergangenheit', {
         'id': '3',
-        'image': 'lager_oberhollabrunn.jpg',
+        'image': 'saguna.jpg',
         'title': 'Ein Blick in die gemeinsame Vergangenheit',
         'subtitle': """Die Orthodoxen RumänInnen (1683-1918) in Wien und ihre digitale Verortung im Stadtbild""",
         'number': '',
