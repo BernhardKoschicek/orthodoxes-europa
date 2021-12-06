@@ -37,5 +37,6 @@ home_gallery = {
                             ' Archiv der griech.-orient. Kirchengemeinde zur Hl. Dreifaltigkeit, 1010 Wien)',
     'sveti_sava.jpg': 'Die serbisch-orthodoxe Kirche zum Heiligen Sava in 1030 Wien (Mihailo St. Popović)',
     'unterschrift_velimirovic.jpg': 'Unterschrift des Hl. Bischofs Nikolaj Velimirović (1881-1956) im Evangelium der Kirche des Hl. Sava (Mihailo St. Popović)',
-    'uros_predic.jpg': 'Ölgemälde des ersten serbischen Erzbischofs des Hl. Sava von Uroš Predić (1857-1953) (Mihailo St. Popović)'
+    'uros_predic.jpg': 'Ölgemälde des ersten serbischen Erzbischofs des Hl. Sava von Uroš Predić (1857-1953) (Mihailo St. Popović)',
+
 }

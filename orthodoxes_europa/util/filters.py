@@ -16,6 +16,12 @@ INSTITUTES = {
         'logo': 'zf_logo.jpg',
         'member': '',
         'address': ''},
+    'ROK': {
+        'name': 'Rumänisch-orthodoxe Kirchengemeinde „Auferstehung des Herrn und hl. Ap. Andreas“',
+        'url': 'http://www.rumkirche.at/de/home-page-deutsch/',
+        'logo': 'mantuitorul.png',
+        'member': 'Erzpriester OStR HS Prof. Dr. Nicolae Dura',
+        'address': 'Simmeringer Hauptstr. 161/ Kobelgasse 18<br>1110  Wien<br>Österreich'},
     'MT': {
         'name': 'Metropolis von Austria',
         'url': 'http://www.metropolisvonaustria.at/',
@@ -161,7 +167,7 @@ def display_sponsors(self: Any, institutes: Iterator) -> str:
         institute = INSTITUTES[short_name]
         html += '''
                 <div class="row">
-                    <div class="col-sm-4">
+                    <div class="col">
                         <h6>{name}</h6>
                         <p>{member}</p>
                         <p>{address}</p>

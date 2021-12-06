@@ -76,7 +76,7 @@ def team() -> str:
 def projekte(projekt=None):
     if projekt:
         return render_template(
-            'projekt_details.html',
+            'projekt_details/projekt_layout.html',
             projekt=projects_[projekt],
             gallerie=project_gallery)
     else:

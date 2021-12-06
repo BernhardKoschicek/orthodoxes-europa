@@ -1,63 +1,3 @@
-{% extends "layout.html" %}
-{% block title %}{% endblock %}
-{% block content %}
-  {{ header(projekt.title, projekt.subtitle ) }}
-  <div class="row">
-    <div class="col-sm-6">
-      <p><b>Projektleitung:</b> {{ projekt.pi }}</p>
-      <b>ProjektmitarbeiterInnen:</b> <br>
-      <ul>
-        {% for member in projekt.members %}
-          <li>{{ member }}</li>
-        {% endfor %}
-      </ul>
-      <p><b>Laufzeit:</b> {{ projekt.duration }}</p>
-
-    </div>
-    <div class="col-sm-6">
-      <p><b>Trägerin des Projekts:</b><br>
-        {{ projekt.institute |display_sponsors|safe }}
-      </p>
-    </div>
-  </div>
-  <div class="row pt-2">
-    <div class="col-sm-6">
-      <p><b>Gefördert von:</b><br>
-        {{ projekt.sponsor |display_sponsors|safe }}
-      </p>
-    </div>
-    <div class="col-sm-6">
-      <p><b>In Zusammenarbeit mit:</b><br>
-        {{ projekt.partners |display_sponsors|safe }}
-      </p>
-
-    </div>
-  </div>
-  {% include 'util/astro.html' %}
-  <div class="row">
-    <div class="col-lg-8 text-justify">
-      <p><b>Beschreibung:</b></p>
-      {{ projekt.description|safe }}
-    </div>
-    <div class="col-lg-2">
-      <p><b>Galerie:</b></p>
-      {% for img in projekt.gallery %}
-        <div class="col-sm-4" id="gallery" data-toggle="modal"
-             data-target="#exampleModal">
-          <div class=" center-cropped"
-               style="background-image: url({{ url_for('static', filename='images/projekte/'+ img) }})">
-            <img id='{{ loop.index }}'
-                 src='{{ url_for('static', filename='images/projekte/'+ img) }}'
-                 data-target="#carouselExample"
-                 data-slide-to="{{ loop.index0 }}">
-
-          </div>
-        </div>
-      {% endfor %}
-
-    </div>
-  </div>
-
   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
        aria-hidden="true">
     <div class="modal-dialog modal-xl" role="document">
@@ -109,4 +49,3 @@
       </div>
     </div>
   </div>
-{% endblock %}

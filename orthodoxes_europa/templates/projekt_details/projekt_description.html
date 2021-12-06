@@ -1,0 +1,25 @@
+  <div class="row">
+    <div class="col-lg-8 text-justify">
+
+      <p><b>Beschreibung:</b></p>
+      {{ projekt.description|safe }}
+    </div>
+
+    <div class="col-lg-2">
+      <p><b>Galerie:</b></p>
+      {% for img in projekt.gallery %}
+        <div class="col-sm-4" id="gallery" data-toggle="modal"
+             data-target="#exampleModal">
+          <div class=" center-cropped"
+               style="background-image: url({{ url_for('static', filename='images/projekte/'+ img) }})">
+            <img id='{{ loop.index }}'
+                 src='{{ url_for('static', filename='images/projekte/'+ img) }}'
+                 data-target="#carouselExample"
+                 data-slide-to="{{ loop.index0 }}"
+                 alt="{{ img }}">
+          </div>
+        </div>
+      {% endfor %}
+
+    </div>
+  </div>

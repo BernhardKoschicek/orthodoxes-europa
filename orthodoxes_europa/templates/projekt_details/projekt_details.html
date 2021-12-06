@@ -1,0 +1,34 @@
+  <div class="row">
+    <div class="col-sm-6">
+      <p><b>Projektleitung:</b> {{ projekt.pi }}</p>
+      <b>ProjektmitarbeiterInnen:</b> <br>
+      <ul>
+        {% for member in projekt.members %}
+          <li>{{ member }}</li>
+        {% endfor %}
+      </ul>
+      <p><b>Laufzeit:</b> {{ projekt.duration }}</p>
+
+    </div>
+    <div class="col-sm-6">
+      <p><b>Trägerin des Projekts:</b><br>
+        {{ projekt.institute |display_sponsors|safe }}
+      </p>
+    </div>
+  </div>
+  <div class="row pt-2">
+    {% if projekt.sponsor %}
+      <div class="col-sm-6">
+        <p><b>Gefördert von:</b><br>
+          {{ projekt.sponsor |display_sponsors|safe }}
+        </p>
+      </div>
+    {% endif %}
+    {% if projekt.partners %}
+      <div class="col-sm-6">
+        <p><b>In Zusammenarbeit mit:</b><br>
+          {{ projekt.partners |display_sponsors|safe }}
+        </p>
+      </div>
+    {% endif %}
+  </div>

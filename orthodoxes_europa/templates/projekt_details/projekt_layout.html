@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block title %}{% endblock %}
+{% block content %}
+
+  {{ header(projekt.title, projekt.subtitle ) }}
+
+  {% with projekt=projekt %}
+    {% include 'projekt_details/projekt_details.html' %}
+  {% endwith %}
+
+  {% include 'util/astro.html' %}
+
+  {% with projekt=projekt %}
+    {% include 'projekt_details/projekt_description.html' %}
+  {% endwith %}
+
+  {% with projekt=projekt, gallerie=gallerie %}
+    {% include 'projekt_details/projekt_gallery_modal.html' %}
+  {% endwith %}
+
+{% endblock %}
