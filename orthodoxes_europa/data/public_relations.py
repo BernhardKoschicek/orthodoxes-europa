@@ -15,7 +15,7 @@ public = OrderedDict([(
         'text': """<p>
      Der Kathpress Tagesdienst vom 21. Dezember 2021 hat über den erfolgreichen Abschluß des Projektes "Auf der Flucht in der Monarchie – das Schicksal der orthodoxen Flüchtlinge im Lager Oberhollabrunn (1914-1918)" im speziellen und die Initiative "Digitales Geoportal der Geschichte der Orthodoxen in Österreich" im allgemeinen berichtet. </p>
             """,
-        'attachment': '<embed src="static/repository/Kathpress_Bericht Projekt Oberhollabrunn.pdf" width="100%" height="1100px" />'
+        'attachment': '<embed src="static/repository/Kathpress_Bericht Projekt Oberhollabrunn.pdf#toolbar=1&navpanes=0" width="100%" height="1100px" />'
     }), (
     'Projekttreffen', {
         'id': 'Meeting',
@@ -87,7 +87,7 @@ public = OrderedDict([(
                 sowie Initiationsriten in Bezug auf das Erwachsen werden erörtert. Die Jugendlichen
                  zeigten großes Interesse an allen vertretenen Religionen und stellten zahlreiche
                   Fragen.""",
-        'attachment': '<embed src="static/repository/Streifzug_durch_die_Religionen.pdf" width="100%" height="600px" />'
+        'attachment': '<embed src="static/repository/Streifzug_durch_die_Religionen.pdf#toolbar=1&navpanes=0" width="100%" height="600px" />'
     }), (
     'Weihnachten', {
         'id': 'Weihnachten',
@@ -128,7 +128,7 @@ public = OrderedDict([(
             umfassend über unser Forschungsprojekt "Auf der Flucht in der Monarchie – das Schicksal
              der orthodoxen Flüchtlinge im Lager Oberhollabrunn (1914-1918)".
              </p>""",
-        'attachment': '<embed src="static/repository/Kathpress_Orthodoxie_Flüchtlinge_Hollabrunn.pdf" width="100%" height="1100px" />'
+        'attachment': '<embed src="static/repository/Kathpress_Orthodoxie_Flüchtlinge_Hollabrunn.pdf#toolbar=1&navpanes=0" width="100%" height="1100px" />'
     }), (
     'Relief', {
         'id': 'Relief',
