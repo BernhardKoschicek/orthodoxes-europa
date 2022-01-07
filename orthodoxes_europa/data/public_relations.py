@@ -1,6 +1,22 @@
 from collections import OrderedDict
 
 public = OrderedDict([(
+    'Katpress_211221', {
+        'id': 'DigitaleMedien',
+        'type': 'Zeitungsartikel',
+        'date': '21. Dezember 2021',
+        'title': 'Bericht der Kathpress über das Projekt zu Oberhollabrunn',
+        'image': 'bahnhof_oberhollabrunn.jpg',
+        'description': """<p>Der Kathpress Tagesdienst vom 21. Dezember 2021 hat
+         über den erfolgreichen Abschluß des Projektes "Auf der Flucht in der 
+         Monarchie – das Schicksal der orthodoxen Flüchtlinge im Lager 
+         Oberhollabrunn (1914-1918)"  berichtet.
+           </p>""",
+        'text': """<p>
+     Der Kathpress Tagesdienst vom 21. Dezember 2021 hat über den erfolgreichen Abschluß des Projektes "Auf der Flucht in der Monarchie – das Schicksal der orthodoxen Flüchtlinge im Lager Oberhollabrunn (1914-1918)" im speziellen und die Initiative "Digitales Geoportal der Geschichte der Orthodoxen in Österreich" im allgemeinen berichtet. </p>
+            """,
+        'attachment': '<embed src="static/repository/Kathpress_Bericht Projekt Oberhollabrunn.pdf" width="100%" height="1100px" />'
+    }), (
     'Projekttreffen', {
         'id': 'Meeting',
         'type': 'Meeting',
@@ -94,7 +110,7 @@ public = OrderedDict([(
                       '<iframe width="100%" height="500px" src="https://www.youtube.com/embed/2McBHjhU_Kg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>'
                       '</iframe></div>'
     }), (
-    'Kathpress', {
+    'Kathpress_081220', {
         'id': 'Spuren',
         'type': 'Zeitungsartikel',
         'date': '08. Dezember 2020',
