@@ -1,6 +1,24 @@
 from collections import OrderedDict
 
 public = OrderedDict([(
+    'auf-der-flucht', {
+        'id': 'DigitaleMedien',
+        'type': 'Projektabschluss',
+        'date': '15. Dezember 2021',
+        'title': 'Projektabschluss "Auf der Flucht in der Monarchie – das Schicksal der  orthodoxen Flüchtlinge im Lager Oberhollabrunn (1914-1918)"',
+        'image': 'haupttor_1916.jpg',
+        'description': """<p>
+            Das Projekt "Auf der Flucht in der Monarchie – das Schicksal der  orthodoxen Flüchtlinge im Lager Oberhollabrunn (1914-1918)" wurde im Oktober 2021 erfolgreich abgeschlossen.
+            </p>""",
+        'text': """<p>
+            Das Projekt "Auf der Flucht in der Monarchie – das Schicksal der  orthodoxen Flüchtlinge im Lager Oberhollabrunn (1914-1918)" wurde im Oktober 2021 erfolgreich abgeschlossen.
+            </p><p>
+            Inhalte des Projektes werden auf Deutsch und auf Englisch in einer Online Ausstellung vorgestellt: <a href="https://auf-der-flucht.orthodoxes-europa.at/de/ausstellung">https://auf-der-flucht.orthodoxes-europa.at/de/ausstellung</a>
+            </p><p>
+            Die Promotion der Projektergebnisse erfolgte online unter: <a href="https://youtu.be/bM2wmRpuBgk">https://youtu.be/bM2wmRpuBgk</a>
+           </p>""",
+        'attachment': ''
+    }), (
     'Katpress_211221', {
         'id': 'DigitaleMedien',
         'type': 'Zeitungsartikel',

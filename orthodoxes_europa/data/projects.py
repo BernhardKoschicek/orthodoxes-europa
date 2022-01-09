@@ -70,6 +70,32 @@ Dieses Forschungsprojekt wird anhand biographischer Daten orthodoxer RumänInnen
 <p>Vergleichen Sie dazu bitte auch folgenden Link des Fördergebers: 
 <a href="http://www.zukunftsfonds-austria.at/projektinfo.php?pcode=P19-3804" target="_blank">http://www.zukunftsfonds-austria.at/projektinfo.php?pcode=P19-3804</a> </p>
 
+<p> 
+Das Projekt "Auf der Flucht in der Monarchie – das Schicksal der  orthodoxen Flüchtlinge im Lager Oberhollabrunn (1914-1918)" wurde im Oktober 2021 erfolgreich abgeschlossen.
+Aufgrund  der pandemischen Lage konnte keine analoge Promotion der Projektergebnisse stattfinden, dafür jedoch eine Online Promotion, die Sie bitte finden unter:
+</p>
+<p> 
+<a href="https://youtu.be/bM2wmRpuBgk">https://youtu.be/bM2wmRpuBgk</a>
+</p>
+<p> 
+Zudem haben wir eine Online Ausstellung gestaltet:
+</p>
+<p> 
+<a href="https://auf-der-flucht.orthodoxes-europa.at/de/ausstellung">https://auf-der-flucht.orthodoxes-europa.at/de/ausstellung</a>
+</p>
+<p> 
+Zur Abfrage der Projektresultate im Geoportal folgen Sie bitte diesem Link:
+</p>
+<p> 
+<a href="https://orthodoxes-europa.at/geoportal">https://orthodoxes-europa.at/geoportal</a>
+</p>
+<p> 
+Zum kostenlosen Download dieser App für Handys:
+</p>
+<p> 
+<a href="https://orthodoxes-europa.at/download">https://orthodoxes-europa.at/download</a>
+</p>
+
  """
     }),
     ('Digitales-Geoportal-der-Geschichte-der-SerbInnen-in-Wien', {
