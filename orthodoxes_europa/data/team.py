@@ -59,7 +59,7 @@ team_ = OrderedDict([
     }),
     ('Mihailo Popović ', {
         'id': '6',
-        'function': 'Projektleiter',
+        'function': 'Projektleiter (ehrenamtlich)',
         'text': """Seit meinem Studium der Byzantinistik und Neogräzistik sowie 
         südosteuropäischen Geschichte an der Universität Wien interessiere ich mich für die 
         mittelalterlichen und neuzeitlichen politischen, geistlichen und kulturellen Beziehungen
