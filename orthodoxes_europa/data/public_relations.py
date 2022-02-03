@@ -1,8 +1,24 @@
 from collections import OrderedDict
 
 public = OrderedDict([(
+    'Standard', {
+        'id': 'Standard-Auf-der-Flucht',
+        'type': 'Zeitungsartikel',
+        'date': '1. Februar 2022',
+        'title': 'Flucht innerhalb der Monarchie: Was die Bukowina mit Niederösterreich verbindet',
+        'image': 'leibnitz_transport.jpg',
+        'description': """<p>DerStandard veröffentlicht in der Kategorie "Wissens
+            -Blogs" einen Beitrag von  Mihailo Popović über das Projekt "Auf der Flucht in der Monarchie".
+                """,
+        'text': """<p>
+            <a href="https://www.derstandard.at/">DerStandard</a> veröffentlicht
+             in der Kategorie "Wissens-Blogs" einen Beitrag von 
+            <a href="https://www.derstandard.at/story/2000132970422/flucht-innerhalb-der-monarchie-was-die-bukowina-mit-niederoesterreich-verbindet?ref=article">
+            Mihailo Popović, "Montenegro im Relief: Terra incognita auf dem Balkan"</a>, über das Projekt "Auf der Flucht in der Monarchie – das Schicksal der  orthodoxen Flüchtlinge im Lager Oberhollabrunn (1914-1918)".
+             </p>"""
+    }), (
     'auf-der-flucht', {
-        'id': 'DigitaleMedien',
+        'id': 'auf-der-flucht-projektabschluss',
         'type': 'Projektabschluss',
         'date': '15. Dezember 2021',
         'title': 'Projektabschluss "Auf der Flucht in der Monarchie – das Schicksal der  orthodoxen Flüchtlinge im Lager Oberhollabrunn (1914-1918)"',
@@ -16,11 +32,13 @@ public = OrderedDict([(
             Inhalte des Projektes werden auf Deutsch und auf Englisch in einer Online Ausstellung vorgestellt: <a href="https://auf-der-flucht.orthodoxes-europa.at/de/ausstellung">https://auf-der-flucht.orthodoxes-europa.at/de/ausstellung</a>
             </p><p>
             Die Promotion der Projektergebnisse erfolgte online unter: <a href="https://youtu.be/bM2wmRpuBgk">https://youtu.be/bM2wmRpuBgk</a>
-           </p>""",
+           </p>
+           <iframe width="560" height="315" src="https://www.youtube.com/embed/bM2wmRpuBgk" title="Auf der Flucht in der Monarchie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+           """,
         'attachment': ''
     }), (
     'Katpress_211221', {
-        'id': 'DigitaleMedien',
+        'id': 'katpress_211221',
         'type': 'Zeitungsartikel',
         'date': '21. Dezember 2021',
         'title': 'Bericht der Kathpress über das Projekt zu Oberhollabrunn',
