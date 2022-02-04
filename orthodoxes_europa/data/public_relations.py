@@ -14,7 +14,7 @@ public = OrderedDict([(
             <a href="https://www.derstandard.at/">DerStandard</a> veröffentlicht
              in der Kategorie "Wissens-Blogs" einen Beitrag von 
             <a href="https://www.derstandard.at/story/2000132970422/flucht-innerhalb-der-monarchie-was-die-bukowina-mit-niederoesterreich-verbindet?ref=article">
-            Mihailo Popović, "Montenegro im Relief: Terra incognita auf dem Balkan"</a>, über das Projekt "Auf der Flucht in der Monarchie – das Schicksal der  orthodoxen Flüchtlinge im Lager Oberhollabrunn (1914-1918)".
+            Mihailo Popović, "Flucht innerhalb der Monarchie: Was die Bukowina mit Niederösterreich verbindet"</a>, über das Projekt "Auf der Flucht in der Monarchie – das Schicksal der  orthodoxen Flüchtlinge im Lager Oberhollabrunn (1914-1918)".
              </p>"""
     }), (
     'auf-der-flucht', {
