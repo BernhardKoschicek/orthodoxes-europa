@@ -15,7 +15,7 @@ front_menu = OrderedDict([
     }),
     ('geoportal', {
         'id': '3',
-        'image': 'Österreich-Europa-Karte.png',
+        'image': 'austrian-map.jpg',
         'title': 'Geoportal',
         'subtitle': 'Digitales Geoportal der Orthodoxen in Österreich'
     }),
