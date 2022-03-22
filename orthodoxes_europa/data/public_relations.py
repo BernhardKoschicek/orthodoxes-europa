@@ -1,6 +1,19 @@
 from collections import OrderedDict
 
 public = OrderedDict([(
+    'korneuburg', {
+        'id': 'Korneuburg-Orthodoxie',
+        'type': 'Vortrag',
+        'date': '7. März 2022',
+        'title': 'Gott in den Religionen der Welt - die orthodoxe Kirche',
+        'image': 'korneuburg.jpg',
+        'description': """<p>Am Montag, 7. März 2022, hat Mihailo Popović einen Vortrag mit dem Titel "Gott in den Religionen der Welt ...""",
+        'text': """<p>
+            Am Montag, 7. März 2022, hat Mihailo Popović einen Vortrag mit dem Titel "Gott in den Religionen der Welt - die orthodoxe Kirche" in der Pfarre Korneuburg gehalten.
+             </p>""",
+        'attachment': '<embed src="static/repository/Korneuburg_Orthodoxie_Plakat.pdf#toolbar=1&navpanes=0" width="100%" height="1100px" />'
+
+    }), (
     'Standard', {
         'id': 'Standard-Auf-der-Flucht',
         'type': 'Zeitungsartikel',
