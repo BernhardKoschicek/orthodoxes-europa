@@ -29,7 +29,8 @@
           </div>
         </a>
       </div>
-      <div class="modal fade text-justify" id="arbeit-{{ item.id }}" tabindex="-1"
+      <div class="modal fade text-justify" id="arbeit-{{ item.id }}"
+           tabindex="-1"
            role="dialog" aria-labelledby="arbeitModalLabel"
            aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered">
@@ -52,13 +53,15 @@
                            alt=""
                            title="Calendar">{{ item.type }} von {{ item.date }}
 
-                    {{ item.text | safe }}
-                      </p>
+                      {{ item.text | safe }}
+                    </p>
                   </div>
                 </div>
-                <div class="row">
-                  <div class="col-12">
-                    {{ item.attachment | safe }}
+                <div class="container-fluid">
+                  <div class="row ">
+                    <div class="col-12 ">
+                      {{ item.attachment | safe }}
+                    </div>
                   </div>
                 </div>
               </div>

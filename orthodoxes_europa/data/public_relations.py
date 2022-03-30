@@ -1,6 +1,24 @@
 from collections import OrderedDict
 
 public = OrderedDict([(
+    'rts', {
+        'id': 'Interview-RTS',
+        'type': 'Interview',
+        'date': 'März 2022',
+        'title': 'Interview mit öffentlich-rechtliche Rundfunkanstalt Serbiens (RTS) ',
+        'image': 'interview_rts.jpg',
+        'description': """<p>Im März 2022 hat Mihailo Popović ein Interview in serbischer Sprache für die öffentlich-rechtliche Rundfunkanstalt Serbiens (RTS) gegeben,...""",
+        'text': """<p>
+            Im März 2022 hat Mihailo Popović ein Interview in serbischer Sprache 
+            für die öffentlich-rechtliche Rundfunkanstalt Serbiens (RTS) gegeben, das weltweit 
+            ausgestrahlt wurde. Darin hat er über seine Forschungsarbeit und unter anderem auch 
+            über seine Initiative des "Digitalen Geoportals der Geschichte der Orthodoxen in Österreich" 
+            gesprochen. Das Interview wurde von Frau Vera Marjanović für die Sendung "Spona" geführt und läßt sich über folgenden Link abrufen:
+             </p>
+             <a href="https://youtu.be/jLnetUg5NSg" target="_blank">https://youtu.be/jLnetUg5NSg</a>""",
+        'attachment': '<iframe width="100%" height="500px" src="https://www.youtube.com/embed/jLnetUg5NSg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+
+    }),(
     'korneuburg', {
         'id': 'Korneuburg-Orthodoxie',
         'type': 'Vortrag',
@@ -28,7 +46,8 @@ public = OrderedDict([(
              in der Kategorie "Wissens-Blogs" einen Beitrag von 
             <a href="https://www.derstandard.at/story/2000132970422/flucht-innerhalb-der-monarchie-was-die-bukowina-mit-niederoesterreich-verbindet?ref=article">
             Mihailo Popović, "Flucht innerhalb der Monarchie: Was die Bukowina mit Niederösterreich verbindet"</a>, über das Projekt "Auf der Flucht in der Monarchie – das Schicksal der  orthodoxen Flüchtlinge im Lager Oberhollabrunn (1914-1918)".
-             </p>"""
+             </p>""",
+        'attachment': ''
     }), (
     'auf-der-flucht', {
         'id': 'auf-der-flucht-projektabschluss',
@@ -46,7 +65,7 @@ public = OrderedDict([(
             </p><p>
             Die Promotion der Projektergebnisse erfolgte online unter: <a href="https://youtu.be/bM2wmRpuBgk">https://youtu.be/bM2wmRpuBgk</a>
            </p>
-           <iframe width="560" height="315" src="https://www.youtube.com/embed/bM2wmRpuBgk" title="Auf der Flucht in der Monarchie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+           <iframe width="100%" height="500px" src="https://www.youtube.com/embed/bM2wmRpuBgk" title="Auf der Flucht in der Monarchie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
            """,
         'attachment': ''
     }), (
