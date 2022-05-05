@@ -32,7 +32,7 @@ def about():
 
 @app.route('/öffentlichkeitsarbeit')
 def öffentlichkeitsarbeit():
-    return render_template('arbeit.html', public=public)
+    return render_template('public.html', public=public)
 
 
 @app.route('/veröffentlichungen')
