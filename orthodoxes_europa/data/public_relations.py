@@ -1,13 +1,26 @@
 from collections import OrderedDict
 
 public = OrderedDict([(
+    'orfiii', {
+        'id': 'Heilige-Grablegung',
+        'type': 'Live Übertragung',
+        'date': '22. April 2022',
+        'title': 'Heilige Grablegung aus der griechisch-orthodoxen Kathedrale zur Heiligen Dreifaltigkeit ',
+        'image': 'orfiii.jpg',
+        'description': """<p>ORF III hat a die Heilige Grablegung aus der griechisch-orthodoxen Kathedrale zur Heiligen Dreifaltigkeit live übertragen ...""",
+        'text': """<p>
+            ORF III hat am Freitag, 22. April 2022, ab 18 Uhr die Heilige Grablegung (Orthros des Karsamstags) aus der griechisch-orthodoxen Kathedrale zur Heiligen Dreifaltigkeit (Fleischmarkt 13, 1010 Wien) live übertragen. Kommentiert wurde die Übertragung von Frau  Sandra Szabo, BA (ORF I Religion). Mihailo St. Popović war mit dem Segen S. Em. des Metropoliten Arsenios von Austria Ko-Kommentator.</p>
+             </p>
+             <p>Siehe dazu: <a href="https://tv.orf.at/program/orf3/orfiiilive310.html" target="_blank">https://tv.orf.at/program/orf3/orfiiilive310.html</a>""",
+        'attachment': ''
+    }),(
     'rts', {
         'id': 'Interview-RTS',
         'type': 'Interview',
         'date': 'März 2022',
         'title': 'Interview mit öffentlich-rechtliche Rundfunkanstalt Serbiens (RTS) ',
         'image': 'interview_rts.jpg',
-        'description': """<p>Im März 2022 hat Mihailo Popović ein Interview in serbischer Sprache für die öffentlich-rechtliche Rundfunkanstalt Serbiens (RTS) gegeben,...""",
+        'description': """<p>Im März 2022 hat Mihailo Popović ein Interview in serbischer Sprache für die öffentlich-rechtliche Rundfunkanstalt Serbiens (RTS) gegeben,...</p>""",
         'text': """<p>
             Im März 2022 hat Mihailo Popović ein Interview in serbischer Sprache 
             für die öffentlich-rechtliche Rundfunkanstalt Serbiens (RTS) gegeben, das weltweit 
@@ -25,7 +38,7 @@ public = OrderedDict([(
         'date': '7. März 2022',
         'title': 'Gott in den Religionen der Welt - die orthodoxe Kirche',
         'image': 'korneuburg.jpg',
-        'description': """<p>Am Montag, 7. März 2022, hat Mihailo Popović einen Vortrag mit dem Titel "Gott in den Religionen der Welt ...""",
+        'description': """<p>Am Montag, 7. März 2022, hat Mihailo Popović einen Vortrag mit dem Titel "Gott in den Religionen der Welt ...</p>""",
         'text': """<p>
             Am Montag, 7. März 2022, hat Mihailo Popović einen Vortrag mit dem Titel "Gott in den Religionen der Welt - die orthodoxe Kirche" in der Pfarre Korneuburg gehalten.
              </p>""",
