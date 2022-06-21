@@ -2,7 +2,7 @@ from collections import OrderedDict
 
 public = OrderedDict([(
     'promotion_rumänen', {
-        'id': 'promotion_rumänen-Grablegung',
+        'id': 'promotion_rumänen',
         'type': 'Vorstellung',
         'date': '14. Juni 2022',
         'title': 'Promotion des Projektes orthodoxe RumänInnen',
