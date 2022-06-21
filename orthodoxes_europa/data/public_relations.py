@@ -1,6 +1,18 @@
 from collections import OrderedDict
 
 public = OrderedDict([(
+    'promotion_rumänen', {
+        'id': 'promotion_rumänen-Grablegung',
+        'type': 'Vorstellung',
+        'date': '14. Juni 2022',
+        'title': 'Promotion des Projektes orthodoxe RumänInnen',
+        'image': 'promotion_22_rum.jpg',
+        'description': """<p>Am Dienstag, 14. Juni 2022, wurden die Resultate des Projektes "Ein Blick in die gemeinsame Vergangenheit ...""",
+        'text': """<p>
+           Am Dienstag, 14. Juni 2022, wurden die Resultate des Projektes "Ein Blick in die gemeinsame Vergangenheit: Die Orthodoxen RumänInnen (1683-1918) in Wien und ihre digitale Verortung im Stadtbild" offiziell in Wien präsentiert. Die Biographien von 309 orthodoxen RumänInnen können nunmehr im Digitalen Geoportal abgerufen werden. </p>
+             <p>""",
+        'attachment': '<embed src="static/repository/promotion_einladung.pdf#toolbar=1&navpanes=0" width="100%" height="1100px" />'
+    }), (
     'orfiii', {
         'id': 'Heilige-Grablegung',
         'type': 'Live Übertragung',
@@ -13,7 +25,7 @@ public = OrderedDict([(
              </p>
              <p>Siehe dazu: <a href="https://tv.orf.at/program/orf3/orfiiilive310.html" target="_blank">https://tv.orf.at/program/orf3/orfiiilive310.html</a>""",
         'attachment': ''
-    }),(
+    }), (
     'rts', {
         'id': 'Interview-RTS',
         'type': 'Interview',
@@ -31,7 +43,7 @@ public = OrderedDict([(
              <a href="https://youtu.be/jLnetUg5NSg" target="_blank">https://youtu.be/jLnetUg5NSg</a>""",
         'attachment': '<iframe width="100%" height="500px" src="https://www.youtube.com/embed/jLnetUg5NSg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
 
-    }),(
+    }), (
     'korneuburg', {
         'id': 'Korneuburg-Orthodoxie',
         'type': 'Vortrag',
