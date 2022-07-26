@@ -1,6 +1,37 @@
 from collections import OrderedDict
 
-public = OrderedDict([(
+public = OrderedDict([ (
+    'jugentreff_2022', {
+        'id': 'jugentreff_2022',
+        'type': 'Veranstaltung',
+        'date': '08. Oktober 2022',
+        'title': '9. Panorthodoxe Jugendtreffen in Wien',
+        'image': 'jugentreff_2022.jpg',
+        'description': """<p>Das 9. Panorthodoxe Jugendtreffen wird am 8. Oktober 2022 in Wien stattfinden ...
+           </p>""",
+        'text': """<p>
+    Das 9. Panorthodoxe Jugendtreffen wird am 8. Oktober 2022 in Wien stattfinden und als Thema „Ich bin die Auferstehung und das Leben! Wer an mich glaubt, der wird leben!“ haben.
+    </p>""",
+        'attachment': '<embed src="static/repository/jugendtreffen_plakat_2022.pdf#toolbar=1&navpanes=0" width="100%" height="1100px" />'
+    }),(
+    'Kathpress_210622', {
+        'id': 'Kathpress_210622',
+        'type': 'Zeitungsartikel',
+        'date': '21. Juni 2022',
+        'title': 'Bericht über die Promotion des Forschungsprojektes über die orthodoxen RumänInnen in Wien',
+        'image': 'saguna.jpg',
+        'description': """<p>In ihrer Ausgabe "Information Orthodoxie", Nr. 116
+         vom 21. Juni 2022 berichtet die Kathpress ausführlich über ...
+           </p>""",
+        'text': """<p>
+     In ihrer Ausgabe "Information Orthodoxie", Nr. 116
+         vom 21. Juni 2022 berichtet die Kathpress ausführlich über das 
+         Forschungsprojekt der Geschichte der orthodoxen RumänInnen in Wien 
+         und auch über das Digitale Geoportal der Geschichte der Orthodoxen 
+         in Österreich.
+          </p>""",
+        'attachment': '<embed src="static/repository/kathpress_210622.pdf#toolbar=1&navpanes=0" width="100%" height="1100px" />'
+    }),(
     'promotion_rumänen', {
         'id': 'promotion_rumänen',
         'type': 'Vorstellung',
@@ -94,8 +125,8 @@ public = OrderedDict([(
            """,
         'attachment': ''
     }), (
-    'Katpress_211221', {
-        'id': 'katpress_211221',
+    'Kathpress_211221', {
+        'id': 'kathpress_211221',
         'type': 'Zeitungsartikel',
         'date': '21. Dezember 2021',
         'title': 'Bericht der Kathpress über das Projekt zu Oberhollabrunn',
