@@ -134,7 +134,7 @@ project_gallery = {
     'sveti_sava.jpg': 'Die serbisch-orthodoxe Kirche zum Heiligen Sava in 1030 Wien (Mihailo St. Popović)',
     'unterschrift_velimirovic.jpg': 'Unterschrift des Hl. Bischofs Nikolaj Velimirović (1881-1956) im Evangelium der Kirche des Hl. Sava (Mihailo St. Popović)',
     'uros_predic.jpg': 'Ölgemälde des ersten serbischen Erzbischofs des Hl. Sava von Uroš Predić (1857-1953) (Mihailo St. Popović)',
-    'boeriu_ioan.jpg': 'Der rumänienstämmige k. u. k. Feldmarschalleutnant Ioan Boeriu Freiherr von Polichna (1859-1949) (Nicolae Dura)',
-    'cantacuzino_serban.jpg': 'Das Denkmal des Fürsten der Walachei Șerban I. Cantacuzino bei der Moldauer Kapelle in 1120 Wien (Nicolae Dura)',
-    'saguna.jpg': 'Fresko des Bischofs und Kirchenrechtlers Andrei Şaguna (1809-1873) (Nicolae Dura)'
+    'boeriu_ioan.jpg': 'Der österreichische Feldmarschall Ioan Boeriu, Baron von Polichna (1859-1949)',
+    'cantacuzino_serban.jpg': 'Denkmal für den Fürsten der Walachei Șerban Cantacuzino (1640-1688) in Wien',
+    'saguna.jpg': 'Der heilige Bischof Andrei Şaguna (1808-1873)'
 }
