@@ -5,7 +5,7 @@ public = OrderedDict([ (
         'id': 'jugentreff_2022',
         'type': 'Veranstaltung',
         'date': '08. Oktober 2022',
-        'title': '9. Panorthodoxe Jugendtreffen in Wien',
+        'title': '9. Panorthodoxes Jugendtreffen in Wien',
         'image': 'jugentreff_2022.jpg',
         'description': """<p>Das 9. Panorthodoxe Jugendtreffen wird am 8. Oktober 2022 in Wien stattfinden ...
            </p>""",
