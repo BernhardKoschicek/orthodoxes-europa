@@ -1,6 +1,6 @@
 from collections import OrderedDict
 
-public = OrderedDict([ (
+public = OrderedDict([(
     'jugentreff_2022', {
         'id': 'jugentreff_2022',
         'type': 'Veranstaltung',
@@ -13,7 +13,23 @@ public = OrderedDict([ (
     Das 9. Panorthodoxe Jugendtreffen wird am 8. Oktober 2022 in Wien stattfinden und als Thema „Ich bin die Auferstehung und das Leben! Wer an mich glaubt, der wird leben!“ haben.
     </p>""",
         'attachment': '<embed src="static/repository/jugendtreffen_plakat_2022.pdf#toolbar=1&navpanes=0" width="100%" height="1100px" />'
-    }),(
+    }), (
+    'sommer_leseempfehlung', {
+        'id': 'sommer_leseempfehlung',
+        'type': 'Leseempfehlung',
+        'date': 'August 2022',
+        'title': 'Sommerliche Leseempfehlung',
+        'image': 'Mara_Brankovic.jpg',
+        'description': "<p>Prof. Dr. Svetlana Tomin empfiehlt unter den Büchern für die Sommerlektüre unter anderem die serbische Übersetzung des Buches von Mihailo St. Popović ...",
+        'text': """<p>Prof. Dr. Svetlana Tomin (Universität Novi Sad,
+        Philosophische Fakultät, Abteilung für serbische Literatur, Serbien)
+        empfiehlt unter den Büchern für die Sommerlektüre unter anderem die
+        serbische Übersetzung des Buches von Mihailo St. Popović
+        <a href="https://akademskaknjiga.com/preporuke-za-citanje-svetlana-tomin/">
+        "Mara Branković: Eine Frau zwischen dem christlichen und dem
+        islamischen Kulturkreis im 15. Jahrhundert"</a></p>""",
+        'attachment': ''
+    }), (
     'Kathpress_210622', {
         'id': 'Kathpress_210622',
         'type': 'Zeitungsartikel',
@@ -31,7 +47,7 @@ public = OrderedDict([ (
          in Österreich.
           </p>""",
         'attachment': '<embed src="static/repository/kathpress_210622.pdf#toolbar=1&navpanes=0" width="100%" height="1100px" />'
-    }),(
+    }), (
     'promotion_rumänen', {
         'id': 'promotion_rumänen',
         'type': 'Vorstellung',
