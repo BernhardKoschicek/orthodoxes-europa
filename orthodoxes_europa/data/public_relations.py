@@ -1,6 +1,19 @@
 from collections import OrderedDict
 
 public = OrderedDict([(
+    'medakovic_22', {
+        'id': 'medakovic_22',
+        'type': 'Kongress',
+        'date': '16. Dezember 2022',
+        'title': 'Kongress zu Ehren des serbischen Professors Dejan Medaković',
+        'image': 'medakovic.jpg',
+        'description': """<p>Mihailo Popović beim Kongress zu Ehren des serbischen Professors Dejan Medaković ...
+           </p>""",
+        'text': """<p>
+    Am Freitag, 16. Dezember 2022, hat Mihailo Popović einen Vortrag mit dem Titel „Траговима Срба у Бечу – Која је веза између архитекте Светозара Ивачковића (1844-1924), улице Волфенгасе, српске црквене општине и грчке цркве у Бечу?“ auf einem Kongress zu Ehren des berühmten serbischen Professors und Akademiemitglieds Dejan Medaković in Novi Sad, Serbien, gehalten.
+    </p>""",
+        'attachment': '<embed src="static/repository/Program_Medakovic_PRINT.pdf#toolbar=1&navpanes=0" width="100%" height="1100px" />'
+    }),(
     'jugentreff_2022', {
         'id': 'jugentreff_2022',
         'type': 'Veranstaltung',
