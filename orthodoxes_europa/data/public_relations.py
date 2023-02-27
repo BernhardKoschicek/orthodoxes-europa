@@ -1,6 +1,35 @@
 from collections import OrderedDict
 
 public = OrderedDict([(
+    'kph_270223', {
+        'id': 'kph_270223',
+        'type': 'Kongress',
+        'date': '27. Februar 2023',
+        'title': 'Vortrag an der KPH Wien/Krems',
+        'image': 'kph.png',
+        'description': """<p>Am Montag, 27. Februar 2023, hat Mihailo Popović einen Vortrag zum Verhältnis von Religion ...
+           </p>""",
+        'text': """<p>
+            Am Montag, 27. Februar 2023, hat Mihailo Popović einen Vortrag zum Verhältnis von Religion und Kultur aus der Perspektive der Orthodoxen Kirche im Rahmen des 6. Tages des Interreligiösen Dialogs an der KPH Wien/Krems gehalten.</p>""",
+        'attachment': '<embed src="static/repository/kph.pdf#toolbar=1&navpanes=0" width="100%" height="1100px" />'
+    }), (
+    'rel_pädagogik', {
+        'id': 'rel_pädagogik',
+        'type': 'Ankündigung',
+        'date': '',
+        'title': 'Neues Bachelorstudium Religionspädagogik - Schwerpunkt Orthodoxe Religionspädagogik',
+        'image': 'univie.jpg',
+        'description': """<p>Das Bachelorstudium mit Schwerpunkt Orthodoxe Religionspädagogik bietet Ihnen eine umfassende Einführung ...
+           </p>""",
+        'text': """<p>
+   Das Bachelorstudium mit Schwerpunkt Orthodoxe Religionspädagogik bietet Ihnen eine umfassende Einführung in sämtliche Fachbereiche der Orthodoxen Theologie, erweitert durch die vorgesehenen bildungswissenschaftlichen Anteile und bereitet auf das Masterstudium mit Schwerpunkt Orthodoxe Religionspädagogik vor.
+   </p><p>
+   In dieser Form stellt das universitäre Bachelorstudium Orthodoxe Religionspädagogik im deutschsprechigen Raum ein Unikat dar. Die konfessionellen Teile des Curriculums werden von orthodoxen Lehrenden der Universität Wien und von orthodoxen Lehrenden von der Kirchlich-Pädagogischen Hochschule Wien/Krems angeboten.
+   </p><p>
+   Weitere Informationen unter: <a href="https://ssc-kaththeologie.univie.ac.at/studienangebot/orthodoxe-theologie/bachelorstudium-orthodoxe-religionspaedagogik/" target="_blank">https://ssc-kaththeologie.univie.ac.at/studienangebot/orthodoxe-theologie/bachelorstudium-orthodoxe-religionspaedagogik/</a>
+   </p>""",
+        'attachment': ''
+    }), (
     'medakovic_22', {
         'id': 'medakovic_22',
         'type': 'Kongress',
@@ -13,7 +42,7 @@ public = OrderedDict([(
     Am Freitag, 16. Dezember 2022, hat Mihailo Popović einen Vortrag mit dem Titel „Траговима Срба у Бечу – Која је веза између архитекте Светозара Ивачковића (1844-1924), улице Волфенгасе, српске црквене општине и грчке цркве у Бечу?“ auf einem Kongress zu Ehren des berühmten serbischen Professors und Akademiemitglieds Dejan Medaković in Novi Sad, Serbien, gehalten.
     </p>""",
         'attachment': '<embed src="static/repository/Program_Medakovic_PRINT.pdf#toolbar=1&navpanes=0" width="100%" height="1100px" />'
-    }),(
+    }), (
     'jugentreff_2022', {
         'id': 'jugentreff_2022',
         'type': 'Veranstaltung',
