@@ -51,7 +51,7 @@
                       <img src="/static/images/icons/calendar4-week.svg"
                            class="icon"
                            alt=""
-                           title="Calendar">{{ item.type }} von {{ item.date }}
+                           title="Calendar">{{ item.type }} {% if item.date %} am {{ item.date }}{% endif %}
 
                       {{ item.text | safe }}
                     </p>
