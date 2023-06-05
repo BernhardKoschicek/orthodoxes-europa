@@ -14,7 +14,27 @@ public = OrderedDict([(
            Am Dienstag, 23. Mai 2023, hielt Prof. Dr. Georgios Tsigaras (Demokritus Universität Thrakien) einen Vortrag in griechischer Sprache über „Die Kathedrale zur Heiligen Dreifaltigkeit in Wien: Geschichte – Architektur – Malerei“ im Veranstaltungsraum „Rigas Feraios“ der Kirche zur Heiligen Dreifaltigkeit in Wien. Organisatoren des Abends waren die Österreichische Gesellschaft für Neugriechische Studien, das Institut für Byzantinistik und Neogräzistik der Universität Wien und die Metropolis von Austria. Vorgestellt wurde der Vortragende durch Prof. Dr. Maria Stassinopoulou (Universität Wien).
             </p>""",
         'attachment': ''
-    }),(
+    }), (
+    'kph_orth_rel', {
+        'id': 'kph_orth_rel',
+        'type': 'Werbung',
+        'date': '',
+        'title': 'Schwerpunkt Orthodoxe Religion an der KPH Wien/Krems',
+        'image': 'kph_unterricht.jpg',
+        'description': """<p>Die KPH Wien/Krems bietet einen Schwerpunkt Orthodoxe Religion in Wien ...
+           </p>""",
+        'text': """<p>
+        Die KPH Wien/Krems bietet einen Schwerpunkt Orthodoxe Religion in Wien an und hat zudem in diesem Bereich Kooperationen mit der KPH Edith Stein und der KPH Augustinum eröffnet.
+        </p><p>
+        Weiterführende Informationen sind den drei beigefügten Karten im pdf-Format zu entnehmen.
+        </p>""",
+        'attachment': '<embed src="static/repository/KPH  Edith STein Schwerpunkt Orth. Religion.pdf#toolbar=1&navpanes=0" width="100%" height="1100px" />'
+                      '<br>'
+                      '<embed src="static/repository/KPH Augistinum Schwerpunkt Orthodoxe Reigion.pdf#toolbar=1&navpanes=0" width="100%" height="1100px" />'
+                      '<br>'
+                      '<embed src="static/repository/KPH Wien_Krems- Schwerpunkt Orth. Religion.pdf#toolbar=1&navpanes=0" width="100%" height="1100px" />'
+                      '<br>'
+    }), (
     'kph_270223', {
         'id': 'kph_270223',
         'type': 'Kongress',
