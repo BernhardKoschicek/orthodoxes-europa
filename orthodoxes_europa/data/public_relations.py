@@ -1,6 +1,20 @@
 from collections import OrderedDict
 
 public = OrderedDict([(
+    'hl_dr_faltigkeit_230523', {
+        'id': 'hl_dr_faltigkeit_230523',
+        'type': 'Vortrag',
+        'date': '23. Mai 2023',
+        'title': 'Vortrag über die griechisch-orthodoxe Kathedrale zur Heiligen Dreifaltigkeit in Wien',
+        'image': 'faltigkeit.jpg',
+        'description': """<p>
+        Am Dienstag, 23. Mai 2023, hielt Prof. Dr. Georgios Tsigaras (Demokritus Universität Thrakien) einen Vortrag ...
+           </p>""",
+        'text': """<p>
+           Am Dienstag, 23. Mai 2023, hielt Prof. Dr. Georgios Tsigaras (Demokritus Universität Thrakien) einen Vortrag in griechischer Sprache über „Die Kathedrale zur Heiligen Dreifaltigkeit in Wien: Geschichte – Architektur – Malerei“ im Veranstaltungsraum „Rigas Feraios“ der Kirche zur Heiligen Dreifaltigkeit in Wien. Organisatoren des Abends waren die Österreichische Gesellschaft für Neugriechische Studien, das Institut für Byzantinistik und Neogräzistik der Universität Wien und die Metropolis von Austria. Vorgestellt wurde der Vortragende durch Prof. Dr. Maria Stassinopoulou (Universität Wien).
+            </p>""",
+        'attachment': ''
+    }),(
     'kph_270223', {
         'id': 'kph_270223',
         'type': 'Kongress',
