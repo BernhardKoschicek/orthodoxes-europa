@@ -1,6 +1,20 @@
 from collections import OrderedDict
 
 public = OrderedDict([(
+    'stiftung_pro', {
+        'id': 'stiftung_pro',
+        'type': 'Vortrag',
+        'date': '9. Juni 2023',
+        'title': 'Vortrag über die griechisch-orthodoxe Kathedrale zur Heiligen Dreifaltigkeit in Wien',
+        'image': 'stiftung_pro.jpg',
+        'description': """<p>
+        Am Freitag, 9. Juni 2023, hat der serbisch-orthodoxe Patriarch Porfirije auf Einladung von Kardinal Christoph Schönborn ...
+           </p>""",
+        'text': """<p>
+          Am Freitag, 9. Juni 2023, hat der serbisch-orthodoxe Patriarch Porfirije auf Einladung von Kardinal Christoph Schönborn und der Stiftung Pro Oriente eine vielbeachtete Rede im Erzbischöflichen Palais in Wien gehalten.
+           </p>""",
+        'attachment': '<embed src="static/repository/PatriarchPorfirijeVortragProOriente.pdf#toolbar=1&navpanes=0" width="100%" height="1100px" />'
+    }), (
     'hl_dr_faltigkeit_230523', {
         'id': 'hl_dr_faltigkeit_230523',
         'type': 'Vortrag',
