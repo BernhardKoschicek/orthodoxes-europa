@@ -1,6 +1,19 @@
 from collections import OrderedDict
 
 public = OrderedDict([(
+    'new_publication', {
+        'id': 'new_publication',
+        'type': 'Publikation',
+        'date': '2023',
+        'title': 'Neue Projektpublikation',
+        'image': 'new_publication.jpg',
+        'description': """<p>
+        Professor Dr. N. Dura und Dr. D.-I. Rus haben auf der Basis der Ergebnisse des Projektes ...
+           </p>""",
+        'text': """<p>
+         Professor Dr. N. Dura und Dr. D.-I. Rus haben auf der Basis der Ergebnisse des Projektes "Ein Blick in die gemeinsame Vergangenheit: Die Orthodoxen RumänInnen (1683-1918) in Wien und ihre digitale Verortung im Stadtbild" eine Monographie über berühmte rumänische Persönlichkeiten in Wien im Zeitraum 1683 bis 1918 in rumänischer Sprache vorgelegt. </p>""",
+        'attachment': ''
+    }),(
     'stiftung_pro', {
         'id': 'stiftung_pro',
         'type': 'Vortrag',
