@@ -1,9 +1,8 @@
 from typing import Any, Iterator
 
 import flask
-import jinja2
+from jinja2 import pass_context
 from flask import url_for
-
 
 from orthodoxes_europa.data.projects import projects_
 
@@ -17,11 +16,13 @@ INSTITUTES = {
         'member': '',
         'address': ''},
     'ROK': {
-        'name': 'Rumänisch-orthodoxe Kirchengemeinde „Auferstehung des Herrn und hl. Ap. Andreas“',
+        'name': 'Rumänisch-orthodoxe Kirchengemeinde „Auferstehung des Herrn '
+                'und hl. Ap. Andreas“',
         'url': 'http://www.rumkirche.at/de/home-page-deutsch/',
         'logo': 'mantuitorul.png',
         'member': 'Erzpriester OStR HS Prof. Dr. Nicolae Dura',
-        'address': 'Simmeringer Hauptstr. 161/ Kobelgasse 18<br>1110  Wien<br>Österreich'},
+        'address': 'Simmeringer Hauptstr. 161/ Kobelgasse 18<br>1110  '
+                   'Wien<br>Österreich'},
     'MT': {
         'name': 'Metropolis von Austria',
         'url': 'http://www.metropolisvonaustria.at/',
@@ -44,7 +45,8 @@ INSTITUTES = {
         'name': 'Abteilung Byzanzforschung (ABF)',
         'url': 'https://www.oeaw.ac.at/en/byzantine-research/',
         'logo': 'oeaw.jpg',
-        'member': 'Österreichische Akademie der Wissenschaften (ÖAW) <br> Institut für Mittelalterforschung (IMAFO)',
+        'member': 'Österreichische Akademie der Wissenschaften (ÖAW) <br> '
+                  'Institut für Mittelalterforschung (IMAFO)',
         'address': 'Hollandstraße 11-13<br> 1020 Wien<br> Österreich'},
     'ACDH': {
         'name': 'Austrian Centre for Digital Humanities and Cultural Heritage',
@@ -114,9 +116,7 @@ INSTITUTES = {
         'address': ''}}
 
 
-
-
-@jinja2.contextfilter
+@pass_context
 @blueprint.app_template_filter()
 def display_menu(self: Any, route: str) -> str:
     """ Returns HTML with the menu and mark appropriate item as selected."""
@@ -130,23 +130,31 @@ def display_menu(self: Any, route: str) -> str:
         if item == 'projekte':
             html += """<div class="nav-item dropdown">
                     <a class=" nav-link dropdown-toggle {active}" href="{url}" 
-                    id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{label}</a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    id="navbarDropdown" role="button" data-toggle="dropdown" 
+                    aria-haspopup="true" aria-expanded="false">{label}</a>
+                    <div class="dropdown-menu" 
+                    aria-labelledby="navbarDropdown">
                     <a class ="dropdown-item" href="{url}">Übersicht</a>
                     <div class="dropdown-divider"></div>""".format(
-                    active=active, url=url_for(item), label=item.title())
+                active=active, url=url_for(item), label=item.title())
             for project in projects_:
-                html += '<a class ="dropdown-item" href="{url}">{label}</a>'.format(
-                    url=url_for(item, projekt=project, _method='GET'), label=project.replace('-', ' '))
+                html += ('<a class ="dropdown-item" '
+                         'href="{url}">{label}</a>').format(
+                    url=url_for(item,
+                                projekt=project, _method='GET'),
+                    label=project.replace('-', ' '))
 
             html += '  </div></div>'
         else:
-            html += '<a class="nav-item nav-link {active}" href="{url}">{label}</a>'.format(
-            active=active, url=url_for(item), label=item.title())
+            html += ('<a class="nav-item nav-link '
+                     '{active}" href="{url}">{label}</a>').format(
+                active=active,
+                url=url_for(item),
+                label=item.title())
     return html
 
 
-@jinja2.contextfilter
+@pass_context
 @blueprint.app_template_filter()
 def display_institutes(self: Any, institutes: Iterator) -> str:
     html = ''
@@ -154,12 +162,16 @@ def display_institutes(self: Any, institutes: Iterator) -> str:
         institute = INSTITUTES[short_name]
         html += '''
             <a href="{url}" target="_blank">
-                <img src="/static/images/institutes/{logo}" alt="{name}" title="{name}"  style="display: unset;">
-            </a>'''.format(url=institute['url'], logo=institute['logo'], name=institute['name'])
+                <img src="/static/images/institutes/{logo}" alt="{name}" 
+                title="{name}"  style="display: unset;">
+            </a>'''.format(
+            url=institute['url'],
+            logo=institute['logo'],
+            name=institute['name'])
     return html
 
 
-@jinja2.contextfilter
+@pass_context
 @blueprint.app_template_filter()
 def display_sponsors(self: Any, institutes: Iterator) -> str:
     html = '<div>'
@@ -175,10 +187,15 @@ def display_sponsors(self: Any, institutes: Iterator) -> str:
                     </div>
                     <div class="col-sm-4">
                         <a href="{url}" target="_blank">
-                            <img src="/static/images/institutes/{logo}" alt="{name}" title="{name}" style="max-height: 200px">
+                            <img src="/static/images/institutes/{logo}" 
+                            alt="{name}" title="{name}" style="max-height: 
+                            200px">
                         </a>
                     </div>
                 </div>
-                '''.format(url=institute['url'], logo=institute['logo'], name=institute['name'],
-                           member=institute['member'], address=institute['address'])
+                '''.format(
+            url=institute['url'], logo=institute['logo'],
+            name=institute['name'],
+            member=institute['member'],
+            address=institute['address'])
     return html + '</div>'
