@@ -1,6 +1,26 @@
 from collections import OrderedDict
 
 public = OrderedDict([(
+    'new_monographie', {
+        'id': 'new_monographie',
+        'type': 'Publikation',
+        'date': '2024',
+        'title': 'Neue Monographie über die Familie von Baich',
+        'image': 'new_monographie.jpg',
+        'description': """<p>
+        Die Autoren Georg Baich und Theophanes Pampas haben vor kurzem eine Monographie über die Geschichte der Familie von Baich ...
+           </p>""",
+        'text': """
+        <p>
+        Die Autoren Georg Baich und Theophanes Pampas haben vor kurzem eine Monographie über die Geschichte der Familie von Baich vorgelegt. Diese machte sich aus einem kleinen Ort in den Bergen Makedoniens – damals im Osmanischen Reich – auf den Weg, um an der Militärgrenze im äußersten Südosten der Donaumonarchie eine neue Heimat zu finden. Rund 100 Jahre später übersiedelten einige ihrer Nachfahren weiter nach Wien, in die Hauptstadt des Kaiserreichs.
+        </p>
+        <p>
+        Weiterführende Informationen unter: <br>
+        <a href="https://uni.leykamverlag.at/produkt/von-blace-nach-wien/" target="_blank">https://uni.leykamverlag.at/produkt/von-blace-nach-wien/</a>
+        </p>
+         """,
+        'attachment': ''
+    }), (
     'new_publication', {
         'id': 'new_publication',
         'type': 'Publikation',
