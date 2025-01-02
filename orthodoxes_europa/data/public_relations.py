@@ -1,6 +1,30 @@
 from collections import OrderedDict
 
 public = OrderedDict([(
+    'nikaia_i', {
+        'id': 'nikaia_i',
+        'type': 'Vortrag',
+        'date': '05.12.2024',
+        'title': 'Auf dem Weg zur Jubiläumsfeier von Nikaia I (325)',
+        'image': 'Nikea-arius.jpg',
+        'description': """<p>
+        Am 5. Dezember 2024 hat Mihailo Popović einen Vortrag über 
+        „Das Nizäno-Konstantinopolitanische Glaubensbekenntnis im Spiegel 
+        seiner Zeit“ ...
+           </p>""",
+        'text': """
+        <p>
+        Am 5. Dezember 2024 hat Mihailo Popović einen Vortrag über 
+        „Das Nizäno-Konstantinopolitanische Glaubensbekenntnis im Spiegel 
+        seiner Zeit“ im Rahmen der Vortragsreihe Recollectiones der 
+        römisch-katholischen Diözese Eisenstadt in Eisenstadt gehalten. 
+        Dieser Vortrag, den er noch zwei Mal im Jahr 2025 im Burgenland 
+        halten wird, ist eine Einstimmung auf das 1700jährige Jubiläum des 
+        Ersten Ökumenischen Konzils von Nikaia (325).
+        </p>
+         """,
+        'attachment': ''
+    }), (
     'new_monographie', {
         'id': 'new_monographie',
         'type': 'Publikation',
