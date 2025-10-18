@@ -122,7 +122,7 @@ def display_menu(self: Any, route: str) -> str:
     """ Returns HTML with the menu and mark appropriate item as selected."""
     html = ''
     items = ['projekte', 'öffentlichkeitsarbeit', 'team', 'geoportal',
-             'download', 'veröffentlichungen', 'verein', 'impressum']
+             'download', 'veröffentlichungen', 'impressum']
     for item in items:
         active = ''
         if route.startswith('/' + item):

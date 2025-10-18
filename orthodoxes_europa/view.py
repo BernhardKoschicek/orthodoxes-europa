@@ -61,9 +61,9 @@ def impressum():
     return render_template('impressum.html')
 
 
-@app.route('/verein')
-def verein():
-    return render_template('verein.html')
+# @app.route('/verein')
+# def verein():
+#     return render_template('verein.html')
 
 
 @app.route('/team')
