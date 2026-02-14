@@ -1,6 +1,46 @@
 from collections import OrderedDict
 
 public = OrderedDict([(
+    'geschichte_orthodoxen', {
+        'id': 'geschichte_orthodoxen',
+        'type': 'Vortrag',
+        'date': '30.01.2026',
+        'title': 'Zur Geschichte der Orthodoxen in Wien',
+        'image': 'geschichte_orthodoxen.jpg',
+        'description': """<p>
+         Am 30. Jänner 2026 hat Mihailo Popović einen Vortrag mit dem Titel 
+        "Blumen aus dem Orient. Geschichte und Bedeutung der orthodoxen
+         Kirchen ...
+           </p>""",
+        'text': """
+        <p>
+        Am 30. Jänner 2026 hat Mihailo Popović einen Vortrag mit dem Titel 
+        "Blumen aus dem Orient. Geschichte und Bedeutung der orthodoxen
+         Kirchen in Wien" im Rahmen des Kulturfrühlings Pötzleinsdorf 
+         in der Pfarre Pötzleinsdorf  in 1180 Wien gehalten.
+        </p>
+         """,
+        'attachment': ''
+    }),(
+    'wesen_kirche', {
+        'id': 'wesen_kirche',
+        'type': 'Vortrag',
+        'date': '21.01.2026',
+        'title': 'Über das Wesen der Orthodoxen Kirche',
+        'image': 'wesen_kirche.jpg',
+        'description': """<p>
+          Am 21. Jänner 2026 hat Mihailo Popović einen Vortrag über "Die 
+        Orthodoxe Kirche: Vergangenheit, Gegenwart, Zukunft" ...
+           </p>""",
+        'text': """
+        <p>
+        Am 21. Jänner 2026 hat Mihailo Popović einen Vortrag über "Die 
+        Orthodoxe Kirche: Vergangenheit, Gegenwart, Zukunft" in der 
+        Pfarrgemeinde Allerheiligen in 1200 Wien gehalten.
+        </p>
+         """,
+        'attachment': ''
+    }),(
     'nikaia_i', {
         'id': 'nikaia_i',
         'type': 'Vortrag',

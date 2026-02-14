@@ -3,7 +3,7 @@ from collections import OrderedDict
 team_ = OrderedDict([
     ('Peter Fraundorfer', {
         'id': '1',
-        'function': 'Forschung',
+        'function': 'Forschung (ehrenamtlich)',
         'text': """Schon in meinem Bachelorstudium hat mich vor allem die Kirchengeschichte 
         interessiert. Im Masterstudium am Institut für österreichische Geschichtsforschung 
         konnte ich dieses Interesse in meiner Masterarbeit über die hoch- und 
@@ -15,7 +15,7 @@ team_ = OrderedDict([
     }),
     ('Verena Demel ', {
         'id': '2',
-        'function': 'Forschung',
+        'function': 'Forschung (ehrenamtlich)',
         'text': """Während meines Lehramtsstudiums für Geschichte, Sozialkunde und Politische
          Bildung beschäftigte ich mich besonders mit Theorien des historischen Denkens und 
          Lernens sowie der Analyse historischer und musealer Erzählungen.
@@ -27,7 +27,7 @@ team_ = OrderedDict([
     }),
     ('Rainer Simon', {
         'id': '3',
-        'function': 'App Deveolpment',
+        'function': 'App Deveolpment (ehrenamtlich)',
         'text': """Ich bin Senior Scientist in der Forschungsgruppe 'Data Science and Artificial
          Intelligence' am <a href="https://www.ait.ac.at" target="_blank">Austrian Institute of Technology</a>. In meiner
           Arbeit beschäftige ich mich vorwiegend mit dem Einsatz von Web- und <a href="https://en.wikipedia.org/wiki/Linked_data" target="_blank">Linked Data</a>-Technologien im Kultur- und
@@ -45,17 +45,21 @@ team_ = OrderedDict([
         'text': "",
         'img': 'bernhard.png',
     }),
-    ('Sandra Wabnitz', {
+    ('Zlatan Stojadinovic', {
         'id': '5',
         'function': 'Forschung (ehrenamtlich)',
-        'text': """Im Bachelorstudium Geschichte an der Uni Wien galt mein Interesse vor allem
-         der Zeitgeschichte. Das Masterstudium am Institut für Österreichische
-          Geschichtsforschung habe ich im Schwerpunkt Mittelalter mit einer Masterarbeit über
-           die Integration der Barbaren in die lateinische und chinesische Historiographie des
-            Frühmittelalters abgeschlossen. Ich freue mich Teil dieses Projektes zu sein, da ich
-             so meine Fähigkeiten, die ich im Masterstudium erworben habe, für ein
-              zeitgeschichtlichtes Thema einsetzen kann.""",
-        'img': 'sandra.jpg',
+        'text': """
+Seit 15 Jahren beschäftige ich mich mit der Geschichte der Wiener Serben –
+ bereits seit meinem Bachelorstudium an der Universität Wien. Auch während
+  meines Masterstudiums lag der Schwerpunkt auf Südosteuropa, mit besonderem
+   Fokus nicht nur auf die Geschichte der Serben, sondern auch auf die 
+   Geschichte der Orthodoxie in Wien, auf kulturellen Transferprozessen 
+   sowie auf Erinnerungskultur. Der Zeitraum, mit dem ich mich befasse, 
+   erstreckt sich von 1689 bis 1966. Es freut mich sehr, durch meine 
+   Mitwirkung an diesem Projekt meine Forschung fortsetzen und einen Beitrag 
+   zur Aufarbeitung weniger bekannter Aspekte der Geschichte der Orthodoxie 
+   in Wien leisten zu können.""",
+        'img': 'zlatan.jpg',
     }),
     ('Mihailo Popović ', {
         'id': '6',
