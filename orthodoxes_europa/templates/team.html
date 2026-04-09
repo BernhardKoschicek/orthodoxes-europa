@@ -6,35 +6,32 @@
     <div class="container">
       <div class="row">
         {% for name, person in team.items() %}
-          <div class="col-lg-3 col-md-6 wow fadeInUp"
-               style="visibility: visible; animation-name: fadeInUp;"
-               data-toggle="modal"
-               data-target="#teamModal{{ person.id }}">
+          <div class="col-lg-3 col-md-6 mb-4"
+               data-bs-toggle="modal"
+               data-bs-target="#teamModal{{ person.id }}">
             <div class="modal fade" id="teamModal{{ person.id }}"
                  tabindex="-1"
-                 role="dialog" aria-labelledby="teamModalLabel"
+                 aria-labelledby="teamModalLabel{{ person.id }}"
                  aria-hidden="true">
               <div class="modal-dialog modal-lg modal-dialog-centered ">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h5 class="modal-title">{{ name }}</h5>
-                    <button type="button" class="close"
-                            data-dismiss="modal"
-                            aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
+                    <h5 class="modal-title" id="teamModalLabel{{ person.id }}">{{ name }}</h5>
+                    <button type="button" class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
                     <h5 class="modal-title">{{ person.function }}</h5>
                     <div class="container-fluid">
                       <div class="row">
                         <div class="col-md-8 pt-2">
-                          <p class="text-justify">{{ person.text | safe }}</p>
+                          <p class="text-start">{{ person.text | safe }}</p>
                           <p>
                             <a href="mailto:{{ person.email }}">{{ person.email }}</a>
                           </p>
                         </div>
-                        <div class="col-md-4 ml-auto">
+                        <div class="col-md-4 ms-auto">
                           <img src="/static/images/team/{{ person.img }}"
                                class="img-fluid"
                                alt=""></div>
@@ -44,7 +41,7 @@
                   <div class="modal-footer">
                     <button type="button"
                             class="btn btn-warning"
-                            data-dismiss="modal">Close
+                            data-bs-dismiss="modal">Close
                     </button>
                   </div>
                 </div>

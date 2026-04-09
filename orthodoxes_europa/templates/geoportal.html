@@ -1,11 +1,16 @@
 {% extends "layout.html" %}
 {% block title %}Geoportal{% endblock %}
+
+{% block container_class %}container-fluid px-4{% endblock %}
+
 {% block content %}
-  {{ header('Geoportal der Geschichte der Orthodoxen in Österreich') }}
-    <div class="container" style="max-width: 1920px; display: flex;">
-        <div class="embed-responsive embed-responsive-1by1">
-            <iframe src="https://geoportal.orthodoxes-europa.at/"
-                    class="embed-responsive-item"></iframe>
-        </div>
-    </div>
+<div class="row justify-content-center">
+  <div class="col-12 text-center">
+    {{ header('Geoportal der Geschichte der Orthodoxen in Österreich') }}
+  </div>
+  <div class="col-12 d-flex justify-content-center pt-3">
+    <iframe src="https://geoportal.orthodoxes-europa.at/"
+            style="width: 100%; max-width: 1800px; height: 85vh; border: none; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);"></iframe>
+  </div>
+</div>
 {% endblock %}

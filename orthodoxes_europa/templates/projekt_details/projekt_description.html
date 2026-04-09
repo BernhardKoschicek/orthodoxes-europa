@@ -1,5 +1,5 @@
   <div class="row">
-    <div class="col-lg-8 text-justify">
+    <div class="col-lg-8 text-start">
 
       <p><b>Beschreibung:</b></p>
       {{ projekt.description|safe }}
@@ -8,14 +8,14 @@
     <div class="col-lg-2">
       <p><b>Galerie:</b></p>
       {% for img in projekt.gallery %}
-        <div class="col-sm-4" id="gallery" data-toggle="modal"
-             data-target="#exampleModal">
+        <div class="col-sm-4" id="gallery" data-bs-toggle="modal"
+             data-bs-target="#exampleModal">
           <div class=" center-cropped"
-               style="background-image: url({{ url_for('static', filename='images/projekte/'+ img) }})">
+               style="background-image: url('{{ url_for('static', filename='images/projekte/'+ img) }}')">
             <img id='{{ loop.index }}'
                  src='{{ url_for('static', filename='images/projekte/'+ img) }}'
-                 data-target="#carouselExample"
-                 data-slide-to="{{ loop.index0 }}"
+                 data-bs-target="#carouselExample"
+                 data-bs-slide-to="{{ loop.index0 }}"
                  alt="{{ img }}">
           </div>
         </div>

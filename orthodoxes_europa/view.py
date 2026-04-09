@@ -1,6 +1,7 @@
 from collections import OrderedDict
-from flask import render_template
+from flask import render_template, Response
 import itertools
+from typing import Union, Tuple, Any
 
 from orthodoxes_europa import app
 from orthodoxes_europa.data.index import front_menu, home_gallery
@@ -26,38 +27,39 @@ def page_not_found(e: Exception) -> tuple:
 
 
 @app.route('/about')
-def about():
+def about() -> str:
     return render_template('about.html')
 
 
 @app.route('/öffentlichkeitsarbeit')
-def öffentlichkeitsarbeit():
+def öffentlichkeitsarbeit() -> str:
     return render_template('public.html', public=public)
 
 
 @app.route('/veröffentlichungen')
-def veröffentlichungen():
+def veröffentlichungen() -> str:
     return render_template(
         'veroeffentlichungen.html',
         publications=publications)
 
 
 @app.route('/download')
-def download():
+def download() -> str:
     return render_template(
         'download.html',
         publications=publications,
         software=software,
-        category=list(itertools.chain.from_iterable([cat['category'] for id, cat in publications.items()])))
+        category=list(itertools.chain.from_iterable(
+            [cat['category'] for id_, cat in publications.items()])))
 
 
 @app.route('/geoportal')
-def geoportal():
+def geoportal() -> str:
     return render_template('geoportal.html')
 
 
 @app.route('/impressum')
-def impressum():
+def impressum() -> str:
     return render_template('impressum.html')
 
 
@@ -73,7 +75,7 @@ def team() -> str:
 
 @app.route('/projekte', methods=['GET'])
 @app.route('/projekte/<projekt>', methods=['GET'])
-def projekte(projekt=None):
+def projekte(projekt: str = None) -> str:
     if projekt:
         return render_template(
             'projekt_details/projekt_layout.html',

@@ -3,10 +3,10 @@
 {% block content %}
 {{ header('Projekte') }}
 
-    <div class="row">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
         {% for name, project in projects.items() %}
             <div class="col">
-                <div class="card" style="min-height: 600px; height: auto;">
+                <div class="card h-100">
                     <img src="/static/images/{{ project.image }}"
                          class="card-img-top" alt="{{ name }}">
                     <div class="card-body">
@@ -14,9 +14,8 @@
                         <p class="card-text">{{ project.subtitle }}</p>
                         <p><b>Projektzeitraum:</b> {{ project.duration }} </p>
                     </div>
-                    <div class="card-footer text-center">
-                        <a href="projekte/{{ name }}" class="btn btn-warning"
-                           style="width: 100%">Projektdetails</a>
+                    <div class="card-footer bg-transparent border-0 text-center">
+                        <a href="{{ url_for('projekte', projekt=name) }}" class="btn btn-warning w-100">Projektdetails</a>
                     </div>
                 </div>
             </div>

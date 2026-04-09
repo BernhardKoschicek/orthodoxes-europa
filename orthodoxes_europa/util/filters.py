@@ -130,12 +130,12 @@ def display_menu(self: Any, route: str) -> str:
         if item == 'projekte':
             html += """<div class="nav-item dropdown">
                     <a class=" nav-link dropdown-toggle {active}" href="{url}" 
-                    id="navbarDropdown" role="button" data-toggle="dropdown" 
+                    id="navbarDropdown" role="button" data-bs-toggle="dropdown" 
                     aria-haspopup="true" aria-expanded="false">{label}</a>
                     <div class="dropdown-menu" 
                     aria-labelledby="navbarDropdown">
                     <a class ="dropdown-item" href="{url}">Übersicht</a>
-                    <div class="dropdown-divider"></div>""".format(
+                    <li><hr class="dropdown-divider"></li>""".format(
                 active=active, url=url_for(item), label=item.title())
             for project in projects_:
                 html += ('<a class ="dropdown-item" '
