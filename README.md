@@ -12,24 +12,27 @@ Digitales Geoportal der Geschichte der Orthodoxen in Österreich.
 
 ### Prerequisites
 
-- Python 3.8+
-- pip
+- Python 3.9+
+- [uv](https://docs.astral.sh/uv/) (Empfohlen; schneller Paket- und Projektmanager)
 
 ### Installation
 
-1. Clone the repository
-2. Install dependencies:
+1. Repository klonen
+2. Abhängigkeiten installieren/synchronisieren:
    ```bash
-   pip install -r requirements.txt
+   uv sync
    ```
+
+Optional (ohne uv):
+- Du kannst weiterhin `pip` verwenden, es wird jedoch empfohlen, `uv` zu nutzen. Siehe Doku.
 
 ### Running the application
 
 ```bash
-python runserver.py
+uv run python runserver.py
 ```
 
-The application will be available at `http://127.0.0.1:5000`.
+Die Anwendung ist erreichbar unter `http://127.0.0.1:5000`.
 
 ## Project Structure
 

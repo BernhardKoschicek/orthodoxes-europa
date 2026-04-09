@@ -1,7 +1,6 @@
-from collections import OrderedDict
-from flask import render_template, Response
 import itertools
-from typing import Union, Tuple, Any
+
+from flask import render_template
 
 from orthodoxes_europa import app
 from orthodoxes_europa.data.index import front_menu, home_gallery
@@ -10,7 +9,6 @@ from orthodoxes_europa.data.public_relations import public
 from orthodoxes_europa.data.publications import publications
 from orthodoxes_europa.data.software import software
 from orthodoxes_europa.data.team import team_
-
 
 
 @app.route('/')
