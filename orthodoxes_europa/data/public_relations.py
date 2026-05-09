@@ -1,6 +1,26 @@
 from collections import OrderedDict
 
 public = OrderedDict([(
+    'Ritterorden_oikumene', {
+        'id': 'Ritterorden_oikumene',
+        'type': 'Vortrag',
+        'date': '21.04.2026',
+        'title': 'Vortrag über die Oikumene/Ökumene',
+        'image': 'stift_klosterneuburg.jpeg',
+        'description': """<p>
+        Auf Einladung des Ritterordens vom Heiligen Grab zu Jerusalem 
+        (Komturei Klosterneuburg) hat Mihailo Popović einen Vortrag ...
+           </p>""",
+        'text': """
+        <p>
+        Auf Einladung des Ritterordens vom Heiligen Grab zu Jerusalem 
+        (Komturei Klosterneuburg) hat Mihailo Popović einen Vortrag „Oikumene 
+        ist nicht gleich Ökumene: zur Bedeutung beider Begriffe im Einst und 
+        Jetzt“ im Stift Klosterneuburg am 21. April 2026 gehalten.
+        </p>
+         """,
+        'attachment': ''
+    }),(
     'geschichte_orthodoxen', {
         'id': 'geschichte_orthodoxen',
         'type': 'Vortrag',
