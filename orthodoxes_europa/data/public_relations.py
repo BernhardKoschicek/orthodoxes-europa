@@ -1,6 +1,27 @@
 from collections import OrderedDict
 
 public = OrderedDict([(
+    'mara_brankovic_20062026', {
+        'id': 'Ritterorden_oikumene',
+        'type': 'Vortrag',
+        'date': '20.06.2026',
+        'title': 'Vortrag über Mara Branković',
+        'image': 'mara_brankovic_20062026.jpeg',
+        'description': """<p>
+        Am 20. Juni 2026 hielt Mihailo Popović einen Vortrag mit dem Titel 
+        „Српска принцеза Мара Бранковић - ...
+           </p>""",
+        'text': """
+        <p>
+        Am 20. Juni 2026 hielt Mihailo Popović einen Vortrag mit dem Titel 
+        „Српска принцеза Мара Бранковић - Добротворица православних народа 
+        Балкана у 15. веку“ („Die serbische Prinzessin Mara Branković - eine 
+        Wohltäterin der orthodoxen Völker des Balkans im 15. Jahrhundert“) in 
+        der serbisch-orthodoxen Kirche zur Auferstehung Christi in 1020 Wien.
+        </p>
+         """,
+        'attachment': ''
+    }),(
     'Ritterorden_oikumene', {
         'id': 'Ritterorden_oikumene',
         'type': 'Vortrag',
