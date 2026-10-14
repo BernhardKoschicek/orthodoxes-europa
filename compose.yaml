@@ -1,0 +1,38 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Containerfile
+    image: orthodoxes-europa:latest
+    container_name: orthodoxes-europa-web
+    restart: unless-stopped
+    environment:
+      - PORT=5000
+      - HOST=0.0.0.0
+      - DEBUG=false
+      - SECRET_KEY=${SECRET_KEY:-default-secret-key-change-in-production}
+      - STORAGE_PATH=/storage
+      - REDIS_URL=${REDIS_URL:-}
+    ports:
+      - "127.0.0.1:${PORT:-5000}:5000"
+    volumes:
+      - ./storage:/storage:Z
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:5000/health')"]
+      interval: 15s
+      timeout: 3s
+      retries: 3
+      start_period: 5s
+
+  redis:
+    image: docker.io/library/redis:7-alpine
+    container_name: orthodoxes-europa-redis
+    restart: unless-stopped
+    command: ["redis-server", "--save", "", "--appendonly", "no"]
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 3s
+      retries: 3
+    profiles:
+      - with-cache

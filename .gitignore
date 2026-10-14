@@ -129,3 +129,11 @@ dmypy.json
 .pyre/
 
 .idea/
+
+# Storage & SQLite
+storage/*
+!storage/**/.gitkeep
+*.db
+*.sqlite
+*.sqlite3
+

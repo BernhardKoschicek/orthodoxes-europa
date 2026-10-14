@@ -1,5 +1,7 @@
+"""WSGI entrypoint for orthodoxes-europa."""
 import os
 import sys
+
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
-from orthodoxes_europa import app as application
+from app import app as application  # noqa: E402
